@@ -1,0 +1,8 @@
+title: "Fr. ND TChiemela"
+email: tchiemela@gmail.com
+description: >
+  Catholic Priest and Data Scientist exploring Human-Centered Computing and Ethical Tech.
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
