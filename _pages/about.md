@@ -26,7 +26,6 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
-# About Me
 
 I’m **Fr. Anthony NDUKA**, a Catholic priest and early-career researcher working at the intersection of **data science, ethics, and human-centered computing**. My academic background in **Philosophy**, **Theology**, and **Information Technology** shapes a research outlook that’s both interdisciplinary and values-driven.
 
