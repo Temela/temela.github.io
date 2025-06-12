@@ -1,36 +1,70 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Anthony Nduka",
+    "label": "Catholic Priest | Data Scientist | Human-Centered AI Researcher".
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "tchiemela@gmail.com",
+    "phone": "(+234) 803-7870-***",
+    "url": "https://temela.github.io/",
+    "summary": "A summary of my academic background, research experience, teaching roles, and professional contributions in technology and ethical computing.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "Spiritan Provincialate, 1 Spiritan Way",
+      "postalCode": "403213",
+      "city": "Onistha",
+      "countryCode": "NG",
+      "region": "Anambra"
     },
     "profiles": [
       {
         "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "username": "Tchiemela",
+        "url": "https://twitter.com/_tchiemela/"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "name": "Spiritan University, Nneochi",
+      "location": "Nneochi, Abia State, Nigeria",
+      "position": "Graduate Assistant, Computer Science Department",
+      "url": "https://spiritanuniversity.edu.ng",
+      "startDate": "2024-04-10",
+      "endDate": "Date",
+      "summary": "Support teaching, research, and mentoring in data science and human-centered computing, with focus on ethical and accessible technologies."
+      "highlights": [
+        "Assisted in curriculum development for data science courses.",
+        "Conducted research on ethical implications of AI in education.",
+        "Mentored undergraduate students in data science projects."
+      ]
+    }
+    {
+      "name": "Spiritan Healthcare Apostolate",
+      "location": "Onitsha, Anambra State, Nigeria",
+      "position": "Director",
+      "url": "https://spiritanhecap.org",
+      "startDate": "2022-10-02",
+      "endDate": "Date",
+      "summary": "Lead data-driven healthcare initiatives for elderly and vulnerable populations, integrating ethics, technology, and pastoral care in a real-world mission setting.",
+      "highlights": [
+        "Coordinated interdisciplinary teams to deliver outreach and digital health education.",
+        "Advocated for ethical technology use in underserved healthcare settings.",
+        "Collaborated with researchers on projects related to fall detection and elder mobility."
+      ]
+    }{
+      "name": "Spiritan Provincialate, Onitsha",
+      "location": "Onitsha, Anambra State, Nigeria",
+      "position": "Assistant Provincial Secretary",
+      "url": "https://spiritannse.org",
+      "startDate": "2019-08-10",
+      "endDate": "Date",
+      "summary": "Manage the province’s administrative data systems, support strategic planning, and coordinate digital record-keeping with a focus on efficiency, privacy, and ethical data practices.",
+      "highlights": [
+        "Built and maintained a centralized database for personnel and provincial operations.",
+        "Recognized by the Spiritan Generalate, Rome, as Best Data Management Secretary in 2022.",
+        "Supported digitization of archival and governance documents across the province.",
+       "Collaborated with technical teams to ensure secure data handling and storage."
+   
+      ]
     }
   ],
   "volunteer": [
