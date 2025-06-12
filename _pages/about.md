@@ -29,7 +29,7 @@ latest_posts:
 
 I’m **Fr. Anthony NDUKA**, a Catholic priest and early-career researcher working at the intersection of **data science, ethics, and human-centered computing**. My academic background in **Philosophy**, **Theology**, and **Information Technology** shapes a research outlook that’s both interdisciplinary and values-driven.
 
-I currently serve as a **Graduate Assistant** in the **Department of Computer Science at Spiritan University Nneochi**, and as **Director of the Spiritan Healthcare Apostolate**, where I apply data-driven approaches to support elderly care and healthcare outreach.
+I currently serve as a **Graduate Assistant** in the **Department of Computer Science at <a href='spiritanuniversity.edu.ng'>Spiritan University Nneochi**</a>, and as **Director of the <a href='spiritanhecap.org'>Spiritan Healthcare Apostolate**</a>, where I apply data-driven approaches to support elderly care and healthcare outreach.
 
 ---
 
