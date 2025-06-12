@@ -2,96 +2,79 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Rev. Fr. Nduka Anthony, C.S.Sp
     - name: Languages
-      value: English, German
+      value: English, Spanish, Igbo
+    - name: Website
+      value: https://temela.github.io
+    - name: Email
+      value: tchiemela@gmail.com
+    - name: ORCID
+      value: https://orcid.org/0009-0000-1628-0658
+    - name: LinkedIn
+      value: https://linkedin.com/in/tchiemela
+    - name: GitHub
+      value: https://github.com/temela
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: PGD in Information Technology
+      institution: National Open University of Nigeria, Abuja
+      year: 2024
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Thesis: "Development of INEC Registration and Voting System using Distributed Database"
+        - Supervisor: Dr. Ezema Chukwuedozie
+
+    - title: M.A in Theology
+      institution: Spiritan International School of Theology, Enugu (Affiliated with Duquesne University)
+      year: 2019
       description:
-        - Description 1.
-        - Description 2.
+        - CGPA: 3.47/4.0 (89%)
 
-- title: Experience
-  type: time_table
-  contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: B.A in Religion and Cultural Studies
+      institution: Spiritan International School of Theology, Enugu
+      year: 2018
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - CGPA: 4.45/5.0 (89%)
+        - Thesis: "Cyber Evangelization: Exploring the Potentials of Social Media in the Proclamation of the Gospel in Nigeria"
+        - Supervisor: Fr. Dr. Matthew Mmuo, CMF
+
+    - title: B.A in Philosophy
+      institution: University of Nigeria, Nsukka
+      year: 2015
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+        - CGPA: 4.18/5.0 (82%)
+        - Thesis: "Critique of the Aesthetic Judgment in Kant"
+        - Supervisor: Prof. Christopher Asogwa
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
+    - year: 2022
+      description:
+        - Most Efficient Data Management Secretary, Spiritan Generalate, Rome
+    - year: 2019
+      description:
+        - Most Creative Student of the Year, SIST
+    - year: 2018
+      description:
+        - Best Paper Presenter, NACATHS, Bigard Seminary
 
-- title: Academic Interests
-  type: nested_list
+- title: Certifications
+  type: list
   contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+    - IBM Data Science Professional Certificate (2023)
+    - Data Science Ethics – University of Michigan (2023)
+    - Business Analytics – John Hopkins (2023)
+    - Data Analytics Bootcamp – Lighthall (2023)
+    - Statistics – Stanford (2023)
+    - Python, ACETEL/NOUN (2023)
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - Photography
+    - Graphic Design
+    - Lawn Tennis
+    - Badminton
