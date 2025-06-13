@@ -6,7 +6,7 @@
     "email": "tchiemela@gmail.com",
     "phone": "(+234) 803-7870-***",
     "url": "https://temela.github.io/",
-    "summary": "A summary of my academic background, research experience, teaching roles, and professional contributions in technology and ethical computing.",
+    "summary": "Catholic priest and data scientist with a strong background in AI, healthcare analytics, and ethical computing. Proven experience in interdisciplinary research, academic teaching, and technology solutions for underserved populations. Committed to advancing human-centered AI and socially impactful technologies.",
     "location": {
       "address": "Spiritan Provincialate, 1 Spiritan Way",
       "postalCode": "403213",
@@ -19,212 +19,284 @@
         "network": "Twitter",
         "username": "Tchiemela",
         "url": "https://twitter.com/_tchiemela/"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "tchiemela",
+        "url": "https://linkedin.com/in/tchiemela"
+      },
+      {
+        "network": "GitHub",
+        "username": "Temela",
+        "url": "https://github.com/Temela"
+      },
+      {
+        "network": "ORCID",
+        "username": "0009-0000-1628-0658",
+        "url": "https://orcid.org/0009-0000-1628-0658"
       }
     ]
   },
   "work": [
     {
       "name": "Spiritan University, Nneochi",
-      "location": "Nneochi, Abia State, Nigeria",
+      "location": "Abia State, Nigeria",
       "position": "Graduate Assistant, Computer Science Department",
       "url": "https://spiritanuniversity.edu.ng",
-      "startDate": "2024-04-10",
+      "startDate": "2024-03-01",
       "endDate": null,
-      "summary": "Support teaching, research, and mentoring in data science and human-centered computing, with focus on ethical and accessible technologies.",
+      "summary": "Assisting in instruction and mentoring in programming, data analytics, and ethical technology courses.",
       "highlights": [
-        "Assisted in curriculum development for data science courses.",
-        "Conducted research on ethical implications of AI in education.",
-        "Mentored undergraduate students in data science projects."
+        "Mentored undergraduate students on data projects and coursework.",
+        "Supported instructional delivery for Python and data science classes.",
+        "Provided grading and academic feedback to students."
       ]
     },
     {
       "name": "Spiritan Healthcare Apostolate",
-      "location": "Onitsha, Anambra State, Nigeria",
-      "position": "Director",
+      "location": "Onitsha, Nigeria",
+      "position": "Founder & Director",
       "url": "https://spiritanhecap.org",
-      "startDate": "2022-10-02",
+      "startDate": "2022-10-01",
       "endDate": null,
-      "summary": "Lead data-driven healthcare initiatives for elderly and vulnerable populations, integrating ethics, technology, and pastoral care in a real-world mission setting.",
+      "summary": "Leads a multi-diocesan health initiative serving elderly priests using predictive analytics and digitized care systems.",
       "highlights": [
-        "Coordinated interdisciplinary teams to deliver outreach and digital health education.",
-        "Advocated for ethical technology use in underserved healthcare settings.",
-        "Collaborated with researchers on projects related to fall detection and elder mobility."
+        "Developed predictive healthcare models for proactive elder care.",
+        "Digitized medical records to improve service coordination.",
+        "Over 155 elderly served across four Nigerian dioceses."
       ]
     },
     {
-      "name": "Spiritan Provincialate, Onitsha",
-      "location": "Onitsha, Anambra State, Nigeria",
+      "name": "Spiritan Provincialate, Nigeria Southeast",
+      "location": "Onitsha, Nigeria",
       "position": "Assistant Provincial Secretary",
       "url": "https://spiritannse.org",
-      "startDate": "2019-08-10",
+      "startDate": "2019-08-01",
       "endDate": null,
-      "summary": "Manage the province's administrative data systems, support strategic planning, and coordinate digital record-keeping with a focus on efficiency, privacy, and ethical data practices.",
+      "summary": "Oversees provincial records, digital transformation, and recognized for data excellence.",
       "highlights": [
-        "Built and maintained a centralized database for personnel and provincial operations.",
-        "Recognized by the Spiritan Generalate, Rome, as Best Data Management Secretary in 2022.",
-        "Supported digitization of archival and governance documents across the province.",
-        "Collaborated with technical teams to ensure secure data handling and storage."
+        "Best Data Manager Award by Spiritan Generalate, Rome (2022).",
+        "Digitized and streamlined provincial administrative data.",
+        "Authored biannual newsletter for 2000+ members."
       ]
-    }
-  ],
-  "volunteer": [
+    },
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
+      "name": "Directorate of Social Communications, Spiritans",
+      "location": "Nigeria",
+      "position": "Director",
+      "startDate": "2023-10-01",
+      "endDate": null,
+      "summary": "Leads strategic communication for Catholic engagement and organizational transformation.",
       "highlights": [
-        "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.",
-        "Men of the year 2014 by Time magazine"
+        "Trained 2500+ individuals in social communication practices.",
+        "Improved online visibility of 8 religious organizations.",
+        "Boosted digital Catholic awareness by 45%."
+      ]
+    },
+    {
+      "name": "Spiritan Press Enterprise",
+      "location": "Onitsha, Nigeria",
+      "position": "Assistant Director",
+      "startDate": "2019-09-01",
+      "endDate": "2023-09-01",
+      "summary": "Oversaw operations, data analytics, and quality control across multiple publishing units.",
+      "highlights": [
+        "Raised customer base by 40%.",
+        "Improved revenue by 25% using data-driven strategies."
       ]
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": [
-        "Theory of Relativity"
-      ]
+      "institution": "National Open University of Nigeria",
+      "location": "Abuja, Nigeria",
+      "area": "Information Technology",
+      "studyType": "Postgraduate Diploma",
+      "startDate": "2022-07-01",
+      "endDate": "2024-04-01",
+      "score": null,
+      "courses": [],
+      "thesisTitle": "Development of INEC Registration and Voting System using Distributed Database",
+      "supervisor": "Dr. Ezema Chukwuedozie"
+    },
+    {
+      "institution": "Spiritan International School of Theology",
+      "location": "Enugu, Nigeria",
+      "area": "Theology",
+      "studyType": "M.A",
+      "startDate": "2018-07-01",
+      "endDate": "2019-06-01",
+      "score": "3.47/4.0"
+    },
+    {
+      "institution": "Spiritan International School of Theology",
+      "location": "Enugu, Nigeria",
+      "area": "Religion and Cultural Studies",
+      "studyType": "B.A",
+      "startDate": "2015-09-01",
+      "endDate": "2018-06-01",
+      "score": "4.45/5.0"
+    },
+    {
+      "institution": "University of Nigeria, Nsukka",
+      "location": "Nsukka, Nigeria",
+      "area": "Philosophy",
+      "studyType": "B.A",
+      "startDate": "2011-09-01",
+      "endDate": "2015-06-01",
+      "score": "4.18/5.0"
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "Most Efficient Data Management Secretary",
+      "date": "2022-12-01",
+      "awarder": "Spiritan Generalate, Rome",
+      "summary": "Awarded for excellence in provincial database administration."
+    },
+    {
+      "title": "Best Paper Presenter",
+      "date": "2018-07-01",
+      "awarder": "National Association of Catholic Theology Students (NACATHS)",
+      "summary": "Awarded for outstanding paper presentation on Cyber Evangelization."
     }
   ],
   "certificates": [
     {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com"
+      "name": "IBM Data Science Professional Certificate",
+      "date": "2023-08-01",
+      "issuer": "IBM via Coursera"
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com"
+      "name": "Data Science Ethics",
+      "date": "2023-10-01",
+      "issuer": "University of Michigan"
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com"
+      "name": "Introduction to Data Science",
+      "date": "2023-08-01",
+      "issuer": "IBM"
     },
     {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com"
+      "name": "Introduction to Statistics",
+      "date": "2023-09-01",
+      "issuer": "Stanford University"
     },
     {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com"
+      "name": "Business Analytics with Excel",
+      "date": "2023-10-01",
+      "issuer": "Johns Hopkins University"
     },
     {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com"
+      "name": "Data Analytics Bootcamp",
+      "date": "2023-02-01",
+      "issuer": "Lighthall"
+    },
+    {
+      "name": "Data Analysis with Python",
+      "date": "2023-03-01",
+      "issuer": "ACETEL"
     }
   ],
   "publications": [
     {
-      "name": "Zur Elektrodynamik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "Real-Time Edge Analytics for IoT Networks",
+      "publisher": "International Journal of Research and Innovation in Applied Science",
+      "releaseDate": "2024-09-01",
+      "url": "https://doi.org/10.51584/IJRIAS.2024.909012",
+      "summary": "Optimizing data processing and decision-making in smart cities using real-time analytics."
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+      "name": "Leveraging Big Data and IoT in Media Industry",
+      "publisher": "Under Review at Science and Technology Publishing",
+      "releaseDate": "2024-10-01",
+      "url": "",
+      "summary": "Explores the use of data and IoT to transform content creation, distribution, and audience engagement."
     },
     {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "Quantum Computing in Healthcare",
+      "publisher": "Under Review at International Journal of Innovative Science and Research Technology",
+      "releaseDate": "2024-10-01",
+      "url": "",
+      "summary": "Explores how quantum computing supports diagnostics, drug discovery, and personalized medicine."
     }
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
+      "name": "Programming & Data Science",
+      "keywords": ["Python", "R", "SQL", "Pandas", "Numpy", "Scikit-learn", "Matplotlib"]
+    },
+    {
+      "name": "Analytics & Visualization",
+      "keywords": ["Excel", "Power BI", "Tableau"]
+    },
+    {
+      "name": "Platforms",
+      "keywords": ["Jupyter Notebook", "Visual Studio Code", "Pycharm"]
+    },
+    {
+      "name": "Soft Skills",
+      "keywords": ["Team building", "Communication", "Professional Networking"]
     }
   ],
   "languages": [
     {
-      "language": "German",
-      "fluency": "Native speaker"
-    },
-    {
       "language": "English",
       "fluency": "Fluent"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Intermediate"
+    },
+    {
+      "language": "Igbo",
+      "fluency": "Native speaker"
     }
   ],
   "interests": [
     {
-      "name": "Physics",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit."
+      "name": "Ethical and Inclusive Technology",
+      "keywords": ["AI for Good", "Health Equity", "Tech for Elderly"]
     },
     {
-      "name": "Professor John Doe",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit."
+      "name": "Mission-Driven Communication",
+      "keywords": ["Digital Evangelization", "Media Ministry"]
     }
   ],
+  "references": [],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
+      "name": "INEC Registration and Voting System",
+      "summary": "Developed a distributed database system integrated with biometric and voice recognition to improve Nigeria's voter registration and election credibility.",
       "highlights": [
-        "Quantum Teleportation",
-        "Quantum Cryptography"
+        "Improved electoral transparency using real-time data sync.",
+        "Enhanced access for physically challenged and relocated voters."
       ],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "startDate": "2023-07-01",
+      "endDate": "2023-12-01",
+      "url": ""
+    },
+    {
+      "name": "Predicting Cardiovascular Diseases",
+      "summary": "Built a classification model to predict cardiovascular risk using medical data.",
+      "highlights": [
+        "Achieved 86.96% accuracy using GridSearchCV tuning.",
+        "Applied model to ethical and real-world healthcare scenarios."
+      ],
+      "startDate": "2024-07-01",
+      "endDate": "2024-08-01",
+      "url": "https://github.com/Temela/Heart-Disease-Prediction"
+    },
+    {
+      "name": "Loan Data Analysis for Prosper Marketplace",
+      "summary": "Analyzed loan data to identify default risks and improve lending strategy.",
+      "highlights": [
+        "Visualized patterns influencing loan performance.",
+        "Estimated 15% reduction in default rates."
+      ],
+      "startDate": "2024-05-01",
+      "endDate": "2024-06-01",
+      "url": "https://github.com/Temela/Prosperdataset"
     }
   ]
 }
