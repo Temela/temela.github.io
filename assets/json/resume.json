@@ -120,14 +120,15 @@
       "supervisor": "Dr. Ezema Chukwuedozie"
     },
     {
-      "institution": "Spiritan International School of Theology",
-      "location": "Enugu, Nigeria",
-      "area": "Theology",
-      "studyType": "M.A",
-      "startDate": "2018-07-01",
-      "endDate": "2019-06-01",
-      "score": "3.47/4.0"
-    },
+  "institution": "Spiritan International School of Theology",
+  "affiliation": "Affiliate of Duquesne University of the Holy Spirit, Pennsylvania, USA",
+  "location": "Enugu, Nigeria",
+  "area": "Theology",
+  "studyType": "M.A",
+  "startDate": "2018-07-01",
+  "endDate": "2019-06-01",
+  "score": "3.47/4.0"
+}
     {
       "institution": "Spiritan International School of Theology",
       "location": "Enugu, Nigeria",
