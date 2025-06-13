@@ -2,7 +2,7 @@
 layout: page
 title: Predicting Cardiovascular Diseases
 description: ML model for early detection of heart disease risk
-img: assets/img/projects/heart.jpg
+img: assets/img/projects/hearts.png
 importance: 1
 category: work
 github_repo: Temela/Heart-Disease-Prediction
