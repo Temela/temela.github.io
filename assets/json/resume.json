@@ -239,27 +239,15 @@
     },
     {
       "name": "Analytics & Visualization",
-      "keywords": [
-        "Excel",
-        "Power BI",
-        "Tableau"
-      ]
+      "keywords": ["Excel", "Power BI", "Tableau"]
     },
     {
       "name": "Platforms",
-      "keywords": [
-        "Jupyter Notebook",
-        "Visual Studio Code",
-        "Pycharm"
-      ]
+      "keywords": ["Jupyter Notebook", "Visual Studio Code", "Pycharm"]
     },
     {
       "name": "Soft Skills",
-      "keywords": [
-        "Team building",
-        "Communication",
-        "Professional Networking"
-      ]
+      "keywords": ["Team building", "Communication", "Professional Networking"]
     }
   ],
   "languages": [
@@ -279,18 +267,11 @@
   "interests": [
     {
       "name": "Ethical and Inclusive Technology",
-      "keywords": [
-        "AI for Good",
-        "Health Equity",
-        "Tech for Elderly"
-      ]
+      "keywords": ["AI for Good", "Health Equity", "Tech for Elderly"]
     },
     {
       "name": "Mission-Driven Communication",
-      "keywords": [
-        "Digital Evangelization",
-        "Media Ministry"
-      ]
+      "keywords": ["Digital Evangelization", "Media Ministry"]
     }
   ],
   "references": [],
