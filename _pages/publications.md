@@ -11,9 +11,11 @@ This page highlights selected academic publications focused on human-centered AI
 ---
 
 ## Selected Publications
+
 {% bibliography --query @*[selected=true] %}
 
 <!-- Optional sections (uncomment what you need) -->
+
 <!--
 ## Journal Articles
 {% bibliography --query @article[selected=true] %}
