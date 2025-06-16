@@ -14,6 +14,7 @@ related_publications: nduka2024healthcare
 This project develops a **Random Forest classifier** using clinical data from 299 patients, achieving hospital-ready performance while addressing ethical AI considerations in healthcare.
 
 **Methodology:**
+
 - Processed 14 clinical features (age, BP, cholesterol, etc.)
 - Optimized via GridSearchCV (n_estimators=200, max_depth=10)
 - Evaluated using 10-fold cross-validation
