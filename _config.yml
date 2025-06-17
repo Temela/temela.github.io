@@ -65,9 +65,6 @@ collections:
   books:
     output: true
     permalink: /books/:name/
-  news:
-    output: true
-    permalink: /news/:name/
   projects:
     output: true
     permalink: /projects/:name/
