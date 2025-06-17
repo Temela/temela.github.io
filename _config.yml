@@ -107,7 +107,6 @@ keep_files:
 # Plugins
 # -----------------------------------------------------------------------------
 plugins:
-  - jekyll-archives
   - jekyll-scholar
   - jekyll-paginate-v2
   - jekyll-feed
