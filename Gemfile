@@ -1,80 +1,23 @@
-name: Deploy site
+source "https://rubygems.org"
 
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
+gem "jekyll", "~> 4.3"
 
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
+# Required plugins listed in _config.yml
+gem "jekyll-scholar"
+gem "jekyll-paginate-v2"
+gem "jekyll-feed"
+gem "jekyll-seo-tag"
+gem "jekyll-sitemap"
+gem "jekyll-get-json"
 
-    steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v4
+# Additional plugins and enhancements
+gem "jekyll-toc"             # For auto-generating TOC
+gem "jemoji"                 # Emoji support
+gem "jekyll-twitter-plugin" # Twitter embeds
+gem "jekyll-minifier"        # HTML/CSS/JS minification
 
-      - name: Setup Ruby 💎
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: "3.3.5"
-          bundler-cache: true
+# Support for GitHub-Flavored Markdown
+gem "kramdown-parser-gfm"
 
-      - name: Cache Ruby gems
-        uses: actions/cache@v3
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
-
-      - name: Unfreeze Gemfile.lock
-        run: bundle config set frozen false
-
-      - name: Install Ruby Gems
-        run: bundle install --path vendor/bundle
-
-      - name: Setup Python 🐍
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.13"
-          cache: "pip"
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-
-      - name: Update _config.yml ⚙️
-        uses: fjogeleit/yaml-update-action@main
-        with:
-          commitChange: false
-          valueFile: "_config.yml"
-          propertyPath: "giscus.repo"
-          value: ${{ github.repository }}
-
-      - name: Install system dependencies
-        run: sudo apt-get update && sudo apt-get install -y imagemagick
-
-      - name: Install Python packages
-        run: pip3 install --upgrade nbconvert
-
-      - name: Build site 🔧
-        run: |
-          export JEKYLL_ENV=production
-          bundle exec jekyll build
-
-      - name: Purge unused CSS 🧹
-        run: |
-          npm install -g purgecss
-          purgecss -c purgecss.config.js
-
-      - name: Show build output
-        if: always()
-        run: ls -la _site
-
-      - name: Deploy 🚀
-        if: github.event_name != 'pull_request'
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: _site
+# Ensures bundler version compatibility on GitHub Actions
+gem "bundler", "~> 2.6"
