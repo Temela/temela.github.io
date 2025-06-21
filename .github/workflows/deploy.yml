@@ -1,3 +1,11 @@
+name: Deploy site
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:  # optional: allows manual trigger from GitHub Actions UI
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
