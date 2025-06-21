@@ -1,38 +1,80 @@
-source 'https://rubygems.org'
+name: Deploy site
 
-gem 'jekyll'
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
-# Core plugins that directly affect site building
-group :jekyll_plugins do
-  gem 'jekyll-archives-v2'
-  gem 'jekyll-email-protect'
-  gem 'jekyll-feed'
-  gem 'jekyll-get-json'
-  gem 'jekyll-imagemagick'
-  gem 'jekyll-jupyter-notebook'
-  gem 'jekyll-link-attributes'
-  gem 'jekyll-minifier'
-  gem 'jekyll-paginate-v2'
-  gem 'jekyll-regex-replace'
-  gem 'jekyll-scholar'
-  gem 'jekyll-sitemap'
-  gem 'jekyll-tabs'
-  gem 'jekyll-terser', git: "https://github.com/RobertoJBeltran/jekyll-terser.git"
-  gem 'jekyll-toc'
-  gem 'jekyll-twitter-plugin'
-  gem 'jemoji'
-  gem 'jekyll-archives'
-  gem 'classifier-reborn'  # used for content categorization during the build
-end
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
 
-# Gems for development or external data fetching (outside :jekyll_plugins)
-group :other_plugins do
-  gem 'css_parser'
-  gem 'feedjira'
-  gem 'httparty'
-  gem 'observer'       # used by jekyll-scholar
-  gem 'ostruct'        # used by jekyll-twitter-plugin
-  # gem 'terser'         # used by jekyll-terser
-  # gem 'unicode_utils' # should be already installed by jekyll
-  # gem 'webrick'       # should be already installed by jekyll
-end
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby 💎
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3.5"
+          bundler-cache: true
+
+      - name: Cache Ruby gems
+        uses: actions/cache@v3
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
+      - name: Unfreeze Gemfile.lock
+        run: bundle config set frozen false
+
+      - name: Install Ruby Gems
+        run: bundle install --path vendor/bundle
+
+      - name: Setup Python 🐍
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: "pip"
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Update _config.yml ⚙️
+        uses: fjogeleit/yaml-update-action@main
+        with:
+          commitChange: false
+          valueFile: "_config.yml"
+          propertyPath: "giscus.repo"
+          value: ${{ github.repository }}
+
+      - name: Install system dependencies
+        run: sudo apt-get update && sudo apt-get install -y imagemagick
+
+      - name: Install Python packages
+        run: pip3 install --upgrade nbconvert
+
+      - name: Build site 🔧
+        run: |
+          export JEKYLL_ENV=production
+          bundle exec jekyll build
+
+      - name: Purge unused CSS 🧹
+        run: |
+          npm install -g purgecss
+          purgecss -c purgecss.config.js
+
+      - name: Show build output
+        if: always()
+        run: ls -la _site
+
+      - name: Deploy 🚀
+        if: github.event_name != 'pull_request'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: _site
