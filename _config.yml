@@ -112,6 +112,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-get-json 
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
