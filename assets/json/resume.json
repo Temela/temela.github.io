@@ -1,265 +1,163 @@
 {
   "basics": {
-    "name": "Anthony Nduka",
-    "label": "Catholic Priest | Data Scientist | Human-Centered AI Researcher",
-    "image": "",
+    "name": "Anthony NDUKA, C.S.Sp",
+    "label": "Data Scientist | AI Researcher | Catholic Priest",
     "email": "tchiemela@gmail.com",
-    "phone": "(+234) 803-7870-***",
-    "url": "https://temela.github.io/",
-    "summary": "Catholic priest and data scientist with a strong background in AI, healthcare analytics, and ethical computing. Proven experience in interdisciplinary research, academic teaching, and technology solutions for underserved populations. Committed to advancing human-centered AI and socially impactful technologies.",
+    "phone": "+234 803 787 071",
+    "url": "https://temela.github.io",
+    "summary": "Data scientist and AI researcher with applied experience in machine learning, healthcare analytics, and ethical AI. Combines technical depth (Python, SQL, ML) with interdisciplinary insights from theology and philosophy. Passionate about building technologies for social impact.",
     "location": {
-      "address": "Spiritan Provincialate, 1 Spiritan Way",
-      "postalCode": "403213",
       "city": "Onitsha",
-      "countryCode": "NG",
-      "region": "Anambra"
+      "countryCode": "NG"
     },
     "profiles": [
-      {
-        "network": "Twitter",
-        "username": "Tchiemela",
-        "url": "https://twitter.com/_tchiemela/"
-      },
-      {
-        "network": "LinkedIn",
-        "username": "tchiemela",
-        "url": "https://linkedin.com/in/tchiemela"
-      },
-      {
-        "network": "GitHub",
-        "username": "Temela",
-        "url": "https://github.com/Temela"
-      },
-      {
-        "network": "ORCID",
-        "username": "0009-0000-1628-0658",
-        "url": "https://orcid.org/0009-0000-1628-0658"
-      }
+      { "network": "GitHub", "url": "https://github.com/Temela" },
+      { "network": "LinkedIn", "url": "https://linkedin.com/in/tchiemela" },
+      { "network": "ORCID", "url": "https://orcid.org/0009-0000-1628-0658" }
     ]
   },
   "work": [
     {
-      "name": "Spiritan University, Nneochi",
-      "location": "Abia State, Nigeria",
-      "position": "Graduate Assistant, Computer Science Department",
-      "url": "https://spiritanuniversity.edu.ng",
-      "startDate": "2024-04-10",
-      "endDate": "Date",
-      "summary": "Support teaching, research, and mentoring in data science and human-centered computing, with focus on ethical and accessible technologies.",
+      "name": "Spiritan University",
+      "location": "Nneochi, Abia State",
+      "position": "Graduate Teaching Assistant (Computer Science)",
+      "startDate": "2024-03",
+      "endDate": "Present",
       "highlights": [
-        "Mentored undergraduate students on data projects and coursework.",
-        "Supported instructional delivery for Python and data science classes.",
-        "Provided grading and academic feedback to students."
+        "Teach Python programming, Pandas, and data visualization to undergraduates",
+        "Develop Jupyter Notebook tutorials for ML workflows (Scikit-learn, TensorFlow)"
       ]
     },
     {
       "name": "Spiritan Healthcare Apostolate",
       "location": "Onitsha, Nigeria",
-      "position": "Founder & Director",
-      "url": "https://spiritanhecap.org",
-      "startDate": "2022-10-02",
-      "endDate": "Date",
-      "summary": "Lead data-driven healthcare initiatives for elderly and vulnerable populations, integrating ethics, technology, and pastoral care in a real-world mission setting.",
+      "position": "Founder & Lead Data Scientist",
+      "startDate": "2022-10",
+      "endDate": "Present",
       "highlights": [
-        "Developed predictive healthcare models for proactive elder care.",
-        "Digitized medical records to improve service coordination.",
-        "Over 155 elderly served across four Nigerian dioceses."
-      ]
-    }{
-      "name": "Spiritan Provincialate, Onitsha",
-      "location": "Onitsha, Anambra State, Nigeria",
-      "position": "Assistant Provincial Secretary",
-      "url": "https://spiritannse.org",
-      "startDate": "2019-08-10",
-      "endDate": "Date",
-      "summary": "Manage the province’s administrative data systems, support strategic planning, and coordinate digital record-keeping with a focus on efficiency, privacy, and ethical data practices.",
-      "highlights": [
-        "Built and maintained a centralized database for personnel and provincial operations.",
-        "Recognized by the Spiritan Generalate, Rome, as Best Data Management Secretary in 2022.",
-        "Supported digitization of archival and governance documents across the province.",
-       "Collaborated with technical teams to ensure secure data handling and storage."
-   
+        "Built predictive models for elderly care (86.96% accuracy)",
+        "Digitized medical records to improve coordination across dioceses",
+        "Served 155+ elderly across 4 dioceses using proactive data systems"
       ]
     },
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "name": "Spiritan Provincialate",
+      "location": "Onitsha, Nigeria",
+      "position": "Assistant Provincial Secretary",
+      "startDate": "2019-08",
+      "endDate": "Present",
+      "highlights": [
+        "Built secure provincial personnel database",
+        "Recognized by the Spiritan Generalate as Best Data Management Secretary (2022)",
+        "Streamlined document digitization and provincial record systems"
+      ]
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Most Efficient Data Management Secretary",
-      "date": "2022-12-01",
-      "awarder": "Spiritan Generalate, Rome",
-      "summary": "Awarded for excellence in provincial database administration."
+      "institution": "National Open University of Nigeria",
+      "area": "Information Technology",
+      "studyType": "PGD",
+      "startDate": "2022-07",
+      "endDate": "2024-04",
+      "courses": ["Distributed Systems", "Advanced Database Design", "Software Engineering"]
     },
     {
-      "title": "Best Paper Presenter",
-      "date": "2018-07-01",
-      "awarder": "National Association of Catholic Theology Students (NACATHS)",
-      "summary": "Awarded for outstanding paper presentation on Cyber Evangelization."
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "institution": "Spiritan International School of Theology",
+      "area": "Theology",
+      "studyType": "M.A.",
+      "startDate": "2018-07",
+      "endDate": "2019-06",
+      "score": "3.47/4.0"
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
+      "institution": "Spiritan International School of Theology",
+      "area": "Religion and Cultural Studies",
+      "studyType": "B.A.",
+      "startDate": "2015-09",
+      "endDate": "2018-06",
+      "score": "4.45/5.0"
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
-    }
-  ],
-  "publications": [
-    {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
-    },
-    {
-      "name": "Leveraging Big Data and IoT in Media Industry",
-      "publisher": "Under Review at Science and Technology Publishing",
-      "releaseDate": "2024-10-01",
-      "url": "",
-      "summary": "Explores the use of data and IoT to transform content creation, distribution, and audience engagement."
-    },
-    {
-      "name": "Quantum Computing in Healthcare",
-      "publisher": "Under Review at International Journal of Innovative Science and Research Technology",
-      "releaseDate": "2024-10-01",
-      "url": "",
-      "summary": "Explores how quantum computing supports diagnostics, drug discovery, and personalized medicine."
+      "institution": "University of Nigeria, Nsukka",
+      "area": "Philosophy",
+      "studyType": "B.A.",
+      "startDate": "2011-09",
+      "endDate": "2015-06",
+      "score": "4.18/5.0"
     }
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Python",
-        "R",
-        "SQL",
-        "Pandas",
-        "Numpy",
-        "Scikit-learn",
-        "Matplotlib"
-      ]
+      "name": "Programming",
+      "keywords": ["Python (Pandas, NumPy, Scikit-learn)", "R", "SQL (MySQL, SQLite)"]
     },
     {
-      "name": "Analytics & Visualization",
-      "keywords": ["Excel", "Power BI", "Tableau"]
+      "name": "Machine Learning",
+      "keywords": ["Predictive Modeling", "GridSearchCV", "Feature Engineering"]
     },
     {
-      "name": "Platforms",
-      "keywords": ["Jupyter Notebook", "Visual Studio Code", "Pycharm"]
+      "name": "Data Engineering",
+      "keywords": ["ETL Pipelines", "Distributed Databases", "Data Cleaning"]
+    },
+    {
+      "name": "Visualization",
+      "keywords": ["Matplotlib", "Seaborn", "Power BI", "Tableau"]
+    },
+    {
+      "name": "Tools",
+      "keywords": ["Jupyter Notebook", "VS Code", "Git/GitHub"]
     },
     {
       "name": "Soft Skills",
-      "keywords": ["Team building", "Communication", "Professional Networking"]
-    }
-  ],
-  "languages": [
-    {
-      "language": "German",
-      "fluency": "Native speaker",
-      "icon": ""
-    },
-    {
-      "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
-    }
-  ],
-  "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    },
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "keywords": ["Team building", "Communication", "Public Speaking", "Professional Networking"]
     }
   ],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "INEC Voting System (Distributed Database)",
+      "startDate": "2023",
+      "endDate": "2024",
+      "highlights": [
+        "Designed fault-tolerant system for electoral data",
+        "Tested for 10,000+ concurrent transaction performance"
+      ]
+    },
+    {
+      "name": "Cardiovascular Disease Predictor",
+      "highlights": [
+        "Achieved 86.96% classification accuracy using UCI dataset",
+        "Performed GridSearchCV-based hyperparameter optimization"
+      ]
+    },
+    {
+      "name": "Prosper Loan Default Analysis",
+      "highlights": [
+        "Identified top risk factors for loan defaults (15% risk reduction)",
+        "Created dashboards using Power BI"
+      ]
+    }
+  ],
+  "certificates": [
+    { "name": "IBM Data Science Professional Certificate", "date": "2023" },
+    { "name": "Data Science Ethics (University of Michigan)", "date": "2023" },
+    { "name": "Data Analysis with Python (ACETEL)", "date": "2023" },
+    { "name": "Data Analytics Bootcamp (Lighthall)", "date": "2023" }
+  ],
+  "publications": [
+    {
+      "name": "Real-Time Edge Analytics for IoT Networks",
+      "url": "https://doi.org/10.51584/IJRLAS.2024.909012"
+    },
+    {
+      "name": "Leveraging Big Data and IoT in Media Industry",
+      "url": "",
+      "summary": "Explores data and IoT for optimizing media content creation and delivery. Under review."
+    },
+    {
+      "name": "Quantum Computing in Healthcare",
+      "url": "",
+      "summary": "Uses quantum computing for diagnostics, drug design, and personalized medicine. Under review."
     }
   ]
 }
