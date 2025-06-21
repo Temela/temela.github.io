@@ -6,7 +6,7 @@
     "email": "tchiemela@gmail.com",
     "phone": "(+234) 803-7870-***",
     "url": "https://temela.github.io/",
-    "summary": "A summary of my academic background, research experience, teaching roles, and professional contributions in technology and ethical computing.",
+    "summary": "Catholic priest and data scientist with a strong background in AI, healthcare analytics, and ethical computing. Proven experience in interdisciplinary research, academic teaching, and technology solutions for underserved populations. Committed to advancing human-centered AI and socially impactful technologies.",
     "location": {
       "address": "Spiritan Provincialate, 1 Spiritan Way",
       "postalCode": "403213",
@@ -19,55 +19,68 @@
         "network": "Twitter",
         "username": "Tchiemela",
         "url": "https://twitter.com/_tchiemela/"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "tchiemela",
+        "url": "https://linkedin.com/in/tchiemela"
+      },
+      {
+        "network": "GitHub",
+        "username": "Temela",
+        "url": "https://github.com/Temela"
+      },
+      {
+        "network": "ORCID",
+        "username": "0009-0000-1628-0658",
+        "url": "https://orcid.org/0009-0000-1628-0658"
       }
     ]
   },
   "work": [
     {
       "name": "Spiritan University, Nneochi",
-      "location": "Nneochi, Abia State, Nigeria",
+      "location": "Abia State, Nigeria",
       "position": "Graduate Assistant, Computer Science Department",
       "url": "https://spiritanuniversity.edu.ng",
       "startDate": "2024-04-10",
-      "endDate": null,
-      "summary": "Support teaching, research, and mentoring in data science and human-centered computing, with focus on ethical and accessible technologies.",
+      "endDate": "Date",
+      "summary": "Support teaching, research, and mentoring in data science and human-centered computing, with focus on ethical and accessible technologies."
       "highlights": [
-        "Assisted in curriculum development for data science courses.",
-        "Conducted research on ethical implications of AI in education.",
-        "Mentored undergraduate students in data science projects."
+        "Mentored undergraduate students on data projects and coursework.",
+        "Supported instructional delivery for Python and data science classes.",
+        "Provided grading and academic feedback to students."
       ]
     },
     {
       "name": "Spiritan Healthcare Apostolate",
-      "location": "Onitsha, Anambra State, Nigeria",
-      "position": "Director",
+      "location": "Onitsha, Nigeria",
+      "position": "Founder & Director",
       "url": "https://spiritanhecap.org",
       "startDate": "2022-10-02",
-      "endDate": null,
+      "endDate": "Date",
       "summary": "Lead data-driven healthcare initiatives for elderly and vulnerable populations, integrating ethics, technology, and pastoral care in a real-world mission setting.",
       "highlights": [
-        "Coordinated interdisciplinary teams to deliver outreach and digital health education.",
-        "Advocated for ethical technology use in underserved healthcare settings.",
-        "Collaborated with researchers on projects related to fall detection and elder mobility."
+        "Developed predictive healthcare models for proactive elder care.",
+        "Digitized medical records to improve service coordination.",
+        "Over 155 elderly served across four Nigerian dioceses."
       ]
-    },
-    {
+    }{
       "name": "Spiritan Provincialate, Onitsha",
       "location": "Onitsha, Anambra State, Nigeria",
       "position": "Assistant Provincial Secretary",
       "url": "https://spiritannse.org",
       "startDate": "2019-08-10",
-      "endDate": null,
-      "summary": "Manage the province's administrative data systems, support strategic planning, and coordinate digital record-keeping with a focus on efficiency, privacy, and ethical data practices.",
+      "endDate": "Date",
+      "summary": "Manage the province’s administrative data systems, support strategic planning, and coordinate digital record-keeping with a focus on efficiency, privacy, and ethical data practices.",
       "highlights": [
         "Built and maintained a centralized database for personnel and provincial operations.",
         "Recognized by the Spiritan Generalate, Rome, as Best Data Management Secretary in 2022.",
         "Supported digitization of archival and governance documents across the province.",
-        "Collaborated with technical teams to ensure secure data handling and storage."
+       "Collaborated with technical teams to ensure secure data handling and storage."
+   
       ]
-    }
-  ],
-  "volunteer": [
+    },
     {
       "organization": "People's Climate March",
       "location": "Zurich, Switzerland",
@@ -76,10 +89,7 @@
       "startDate": "2014-04-01",
       "endDate": "2015-07-01",
       "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": [
-        "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.",
-        "Men of the year 2014 by Time magazine"
-      ]
+      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
     }
   ],
   "education": [
@@ -92,18 +102,21 @@
       "startDate": "1905-01-01",
       "endDate": "1905-01-01",
       "score": "10",
-      "courses": [
-        "Theory of Relativity"
-      ]
+      "courses": ["Theory of Relativity"]
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "Most Efficient Data Management Secretary",
+      "date": "2022-12-01",
+      "awarder": "Spiritan Generalate, Rome",
+      "summary": "Awarded for excellence in provincial database administration."
+    },
+    {
+      "title": "Best Paper Presenter",
+      "date": "2018-07-01",
+      "awarder": "National Association of Catholic Theology Students (NACATHS)",
+      "summary": "Awarded for outstanding paper presentation on Cyber Evangelization."
     }
   ],
   "certificates": [
@@ -111,89 +124,112 @@
       "name": "Machine Learning",
       "date": "2018-01-01",
       "issuer": "Stanford University",
-      "url": "https://example.com"
+      "url": "https://example.com",
+      "icon": "fa-solid fa-location-dot"
     },
     {
       "name": "Quantum Computing",
       "date": "2018-01-01",
       "issuer": "Stanford University",
-      "url": "https://example.com"
+      "url": "https://example.com",
+      "icon": "fa-solid fa-tag"
     },
     {
       "name": "Quantum Information",
       "date": "2018-01-01",
       "issuer": "Stanford University",
-      "url": "https://example.com"
+      "url": "https://example.com",
+      "icon": "fa-solid fa-envelope"
     },
     {
       "name": "Quantum Cryptography",
       "date": "2018-01-01",
       "issuer": "Stanford University",
-      "url": "https://example.com"
+      "url": "https://example.com",
+      "icon": "fa-solid fa-hashtag"
     },
     {
       "name": "Quantum Communication",
       "date": "2018-01-01",
       "issuer": "Stanford University",
-      "url": "https://example.com"
+      "url": "https://example.com",
+      "icon": "fa-solid fa-calendar"
     },
     {
       "name": "Quantum Teleportation",
       "date": "2018-01-01",
       "issuer": "Stanford University",
-      "url": "https://example.com"
+      "url": "https://example.com",
+      "icon": "fa-solid fa-clipboard-check"
     }
   ],
   "publications": [
     {
-      "name": "Zur Elektrodynamik bewegter Körper",
+      "name": "Zur Elektrody/namik bewegter Körper",
       "publisher": "Annalen der Physik",
       "releaseDate": "1905-06-30",
       "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
       "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+      "name": "Leveraging Big Data and IoT in Media Industry",
+      "publisher": "Under Review at Science and Technology Publishing",
+      "releaseDate": "2024-10-01",
+      "url": "",
+      "summary": "Explores the use of data and IoT to transform content creation, distribution, and audience engagement."
     },
     {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "Quantum Computing in Healthcare",
+      "publisher": "Under Review at International Journal of Innovative Science and Research Technology",
+      "releaseDate": "2024-10-01",
+      "url": "",
+      "summary": "Explores how quantum computing supports diagnostics, drug discovery, and personalized medicine."
     }
   ],
   "skills": [
     {
       "name": "Physics",
       "level": "Master",
+      "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Python",
+        "R",
+        "SQL",
+        "Pandas",
+        "Numpy",
+        "Scikit-learn",
+        "Matplotlib"
       ]
+    },
+    {
+      "name": "Analytics & Visualization",
+      "keywords": ["Excel", "Power BI", "Tableau"]
+    },
+    {
+      "name": "Platforms",
+      "keywords": ["Jupyter Notebook", "Visual Studio Code", "Pycharm"]
+    },
+    {
+      "name": "Soft Skills",
+      "keywords": ["Team building", "Communication", "Professional Networking"]
     }
   ],
   "languages": [
     {
       "language": "German",
-      "fluency": "Native speaker"
+      "fluency": "Native speaker",
+      "icon": ""
     },
     {
       "language": "English",
-      "fluency": "Fluent"
+      "fluency": "Fluent",
+      "icon": ""
     }
   ],
   "interests": [
     {
       "name": "Physics",
+      "icon": "fa-solid fa-tag",
       "keywords": [
         "Quantum Mechanics",
         "Quantum Computing",
@@ -207,21 +243,20 @@
   "references": [
     {
       "name": "Professor John Doe",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit."
+      "icon": "fa-solid fa-laptop",
+      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
     },
     {
       "name": "Professor John Doe",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit."
+      "icon": "fa-solid fa-thumbtack",
+      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
     }
   ],
   "projects": [
     {
       "name": "Quantum Computing",
       "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": [
-        "Quantum Teleportation",
-        "Quantum Cryptography"
-      ],
+      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
       "startDate": "2018-01-01",
       "endDate": "2018-01-01",
       "url": "https://example.com"

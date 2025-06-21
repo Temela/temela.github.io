@@ -2,47 +2,83 @@ name: Prettier code formatter
 
 on:
   pull_request:
-    branches:
-      - master
-      - main
+    branches: [main, master]
   push:
-    branches:
-      - master
-      - main
+    branches: [main, master]
+    paths:
+      - "**.js"
+      - "**.json"
+      - "**.yml"
+      - "**.yaml"
+      - "**.md"
+      - "**.html"
+      - "**.css"
+      - "**.scss"
+      - "**.liquid"
 
 jobs:
-  check:
-    # available images: https://github.com/actions/runner-images#available-images
+  prettier:
+    name: Check formatting
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
+      - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Setup Node.js ⚙️
+        with:
+          fetch-depth: 0 # Needed for proper git diff
+
+      - name: Setup Node.js
         uses: actions/setup-node@v4
-      - name: Install Prettier 💾
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
         run: npm install --save-dev --save-exact prettier @shopify/prettier-plugin-liquid
-      - name: Prettier Check 🔎
-        id: prettier
-        run: npx prettier . --check
-      - name: Create diff 📝
-        # https://docs.github.com/en/actions/learn-github-actions/expressions#failure
-        if: ${{ failure() }}
+
+      - name: Run Prettier check
+        id: prettier-check
         run: |
-          npx prettier . --write
-          git diff -- . ':(exclude)package-lock.json' ':(exclude)package.json' > diff.txt
+          npx prettier --check \
+            '**/*.{js,json,yml,yaml,md,html,css,scss,liquid}' \
+            '!**/node_modules/**' \
+            '!**/dist/**' \
+            '!**/vendor/**' \
+            '!**/.*'
+
+      - name: Generate diff report
+        if: ${{ failure() && steps.prettier-check.conclusion == 'failure' }}
+        run: |
+          npx prettier --write \
+            '**/*.{js,json,yml,yaml,md,html,css,scss,liquid}' \
+            '!**/node_modules/**' \
+            '!**/dist/**' \
+            '!**/vendor/**' \
+            '!**/.*'
+
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git diff --color > diff.txt || true
           npm install -g diff2html-cli
           diff2html -i file -s side -F diff.html -- diff.txt
-      - name: Upload html diff ⬆️
-        id: artifact-upload
-        if: ${{ failure() && steps.prettier.conclusion == 'failure' }}
+
+      - name: Upload diff report
+        if: ${{ failure() && steps.prettier-check.conclusion == 'failure' }}
         uses: actions/upload-artifact@v4
         with:
-          name: HTML Diff
+          name: prettier-diff
           path: diff.html
           retention-days: 7
-      - name: Dispatch information to repository 🗣️
-        if: ${{ failure() && steps.prettier.conclusion == 'failure' && github.event_name == 'pull_request' }}
-        uses: peter-evans/repository-dispatch@v2
+
+      - name: Comment on PR
+        if: ${{ failure() && steps.prettier-check.conclusion == 'failure' && github.event_name == 'pull_request' }}
+        uses: actions/github-script@v7
         with:
-          event-type: prettier-failed-on-pr
-          client-payload: '{"pr_number": "${{ github.event.number }}", "artifact_url": "${{ steps.artifact-upload.outputs.artifact-url }}", "run_id": "${{ github.run_id }}"}'
+          script: |
+            const fs = require('fs');
+            const diff = fs.readFileSync('diff.txt', 'utf8');
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `❌ Prettier found formatting issues\n\nView the diff: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}`
+            })
