@@ -1,0 +1,50 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    bundler (2.6.9)
+    jekyll (4.3.2)
+      addressable (~> 2.4)
+      colorator (~> 1.1)
+      jekyll-sass-converter (>= 2.0, < 3.0)
+      jekyll-watch (~> 2.2)
+      kramdown (~> 2.3)
+      kramdown-parser-gfm (~> 1.1)
+      liquid (~> 4.0)
+      mercenary (~> 0.4)
+      pathutil (~> 0.16)
+      rouge (>= 3.0, < 4.0)
+      safe_yaml (~> 1.0)
+    jekyll-feed (0.17.0)
+    jekyll-get-json (1.0.2)
+    jekyll-paginate-v2 (3.0.0)
+    jekyll-scholar (7.2.1)
+    jekyll-seo-tag (2.8.0)
+    jekyll-sitemap (1.4.0)
+    jekyll-toc (0.17.1)
+    jekyll-twitter-plugin (2.0.0)
+    jemoji (0.13.0)
+    jekyll-minifier (0.1.10)
+    kramdown (2.3.1)
+    kramdown-parser-gfm (1.1.0)
+    rouge (3.26.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 2.6)
+  jekyll (~> 4.3)
+  jekyll-feed
+  jekyll-get-json
+  jekyll-paginate-v2
+  jekyll-scholar
+  jekyll-seo-tag
+  jekyll-sitemap
+  jekyll-toc
+  jekyll-twitter-plugin
+  jemoji
+  jekyll-minifier
+  kramdown-parser-gfm
+
+BUNDLED WITH
+   2.6.9
