@@ -4,39 +4,38 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:  # FIXED: moved to correct level
+  workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-  - name: Checkout 🛎️
-    uses: actions/checkout@v4
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
 
-  - name: Setup Ruby 💎 (no bundler-cache yet!)
-    uses: ruby/setup-ruby@v1
-    with:
-      ruby-version: "3.3.5"
-      bundler-cache: false  # disable this temporarily to avoid early bundle install
+      - name: Setup Ruby 💎 (no bundler-cache yet!)
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3.5"
+          bundler-cache: false
 
-  - name: Unfreeze Gemfile.lock
-    run: bundle config set frozen false
+      - name: Unfreeze Gemfile.lock
+        run: bundle config set frozen false
 
-  - name: Install correct Bundler version
-    run: gem install bundler -v 2.6.9
+      - name: Install correct Bundler version
+        run: gem install bundler -v 2.6.9
 
-  - name: Cache Ruby gems
-    uses: actions/cache@v3
-    with:
-      path: vendor/bundle
-      key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-      restore-keys: |
-        ${{ runner.os }}-gems-
+      - name: Cache Ruby gems
+        uses: actions/cache@v3
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
 
-  - name: Install Ruby Gems
-    run: bundle install --path vendor/bundle
-
+      - name: Install Ruby Gems
+        run: bundle install --path vendor/bundle
 
       - name: Setup Python 🐍
         uses: actions/setup-python@v5
