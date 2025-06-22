@@ -4,11 +4,12 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:  # optional: allows manual trigger from GitHub Actions UI
+  workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
@@ -17,10 +18,23 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.3.5"
-          bundler-cache: true
+
+      - name: Install correct Bundler version
+        run: gem install bundler -v 2.6.9
 
       - name: Unfreeze Gemfile.lock
         run: bundle config set frozen false
+
+      - name: Cache Ruby gems
+        uses: actions/cache@v3
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
+      - name: Install Ruby Gems
+        run: bundle install --path vendor/bundle
 
       - name: Setup Python 🐍
         uses: actions/setup-python@v5
