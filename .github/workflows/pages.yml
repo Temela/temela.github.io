@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.1.4  # Must match your Gemfile
+          ruby-version: 3.3 # Must match your Gemfile
           bundler-cache: true  # Automatically caches gems
       - run: bundle exec jekyll build
       - uses: actions/upload-pages-artifact@v2

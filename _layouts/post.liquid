@@ -110,10 +110,12 @@ layout: default
     {% endif %}
 
     {% if page.toc and page.toc.beginning %}
-      <div id="table-of-contents">
-        {% toc %}
-      </div>
-      <hr>
+  <div id="table-of-contents">
+    <!-- Table of contents placeholder -->
+    {{ content | toc_only }}  <!-- Alternative if using jekyll-toc -->
+  </div>
+  <hr>
+{% endif %}
     {% endif %}
     <div id="markdown-content">
       {{ content }}

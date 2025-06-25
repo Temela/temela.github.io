@@ -1,2 +1,4 @@
 title: My Site
 theme: minima  # Default Jekyll theme
+plugins:
+  - jekyll-toc
