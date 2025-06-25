@@ -1,26 +1,13 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
+ruby "~> 3.4.0"  # Matches your 3.4.4 version
+
+# Jekyll 4.3+ works with Ruby 3.4
+gem "jekyll", "~> 4.3.3"  
+
+# GitHub Pages gem may not officially support Ruby 3.4 yet
+# So we'll use individual plugins instead:
 group :jekyll_plugins do
-    gem 'classifier-reborn'
-    gem 'jekyll'
-    gem 'jekyll-archives'
-    gem 'jekyll-email-protect'
-    gem 'jekyll-feed'
-    gem 'jekyll-get-json'
-    gem 'jekyll-imagemagick'
-    gem 'jekyll-jupyter-notebook'
-    gem 'jekyll-link-attributes'
-    gem 'jekyll-minifier'
-    gem 'jekyll-paginate-v2'
-    gem 'jekyll-scholar'
-    gem 'jekyll-sitemap'
-    gem 'jekyll-toc'
-    gem 'jekyll-twitter-plugin'
-    gem 'jemoji'
-    gem 'mini_racer'
-    gem 'unicode_utils'
-    gem 'webrick'
-end
-group :other_plugins do
-    gem 'feedjira'
-    gem 'httparty'
+  gem "jekyll-feed"
+  gem "jekyll-seo-tag"
+  # Add other essential plugins here
 end

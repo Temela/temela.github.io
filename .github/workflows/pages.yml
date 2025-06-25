@@ -1,0 +1,30 @@
+name: Build and Deploy
+on:
+  push:
+    branches: ["main"]
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1.4  # Must match your Gemfile
+          bundler-cache: true  # Automatically caches gems
+      - run: bundle exec jekyll build
+      - uses: actions/upload-pages-artifact@v2
+        with:
+          path: ./_site
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/deploy-pages@v2
