@@ -1,0 +1,102 @@
+<div class="news">
+  {% if site.favs != blank %}
+    {% assign favs_size = site.favs | size %}
+    <div
+      class="table-responsive"
+    >
+      <table class="table table-sm table-borderless">
+        {% assign favs = site.favs | reverse %}
+        {% for item in favs %}
+          <tr>
+            {% if item.img %}
+              <th scope="row" id="date_width" style=" padding-right: 10px; padding-left: 0px !important">
+                {% if item.redirect %}
+                  <a class="news-title" href="{{ item.redirect }}" target="_blank">
+                {% elsif item.inline %}
+
+                {% else %}
+                  <a href="{{ item.url | relative_url }}">
+                {% endif %}
+                {% include figure.liquid home=true path=item.img sizes="(min-width: 768px) 156px, 50vw" alt="project thumbnail" %}
+                {% if item.link %}
+                  </a>
+                {% endif %}
+              </th>
+            {% endif %}
+            <td style="vertical-align: middle">
+              {% if item.inline %}
+                #
+                {% if item.redirect == blank -%}
+                  {{- item.title -}}
+                  <span style="font-size: .75rem; font-weight: 20; margin-left: 5px">
+                    {%- if item.creator %}by {{ item.creator }}{% endif -%}
+                  </span>
+                {% endif %}
+              {% elsif item.redirect %}
+                {% if item.redirect contains '://' %}
+                  <a class="news-title" href="{{ item.redirect }}" target="_blank">{{ item.title }}</a
+                  ><span style="font-size: .75rem; font-weight: 20; margin-left: 5px">
+                    {%- if item.creator %}by {{ item.creator }}{% endif -%}
+                  </span>
+                  <svg width="2rem" height="1.2rem" viewBox="0 0 60 35" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9"
+                      class="icon_svg-stroke"
+                      stroke="#999"
+                      stroke-width="1.5"
+                      fill="none"
+                      fill-rule="evenodd"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                {% else %}
+                  <a class="news-title" href="{{ item.redirect | relative_url }}">{{ item.title }}</a>
+                {% endif %}
+              {% else %}
+                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a
+                ><span style="font-size: .75rem; font-weight: 20; margin-left: 5px">
+                  {%- if item.creator %}by {{ item.creator }}{% endif -%}
+                </span>
+              {% endif %}
+              <br>
+              <span style="font-size: .75rem">
+                {{- item.date | date: '%b %d, %Y' }} ·
+                {%- for category in item.categories %}
+                  {% include scripts/category-icon.liquid category=category %}
+                  <a href="{{ category | slugify | prepend: '/favs/' | relative_url }}">{{ category | remove_last: category[-1] }} </a>
+                {% endfor %}
+              </span>
+            </td>
+            <th scope="row" style="font-size: .85rem; font-weight: 200; vertical-align: middle">
+              {% if item.vinyl %}
+                <a href="/vinyls/">
+                  {%- include scripts/category-icon.liquid category='vinyls' styles="color: var(--global-theme-color) !important" -%}
+                </a>
+              {% endif %}
+              {% if item.perfect %}
+                <a href="/goats/">
+                  {%- include scripts/category-icon.liquid category='goats' styles="color: var(--global-theme-color) !important" -%}
+                </a>
+              {%- endif %}
+              <span id="fav-score">
+                {% if item.score or item.stars %}
+                  {% if item.vinyl or item.perfect %}
+                    ·
+                  {% endif %}
+                  {% if item.score %}
+                    {{ item.score }}/{% if item.categories contains 'songs' %}100{% else %}10{% endif %}
+                  {% else %}
+                    {{ item.stars }}/5
+                  {% endif %}
+                {% endif %}
+              </span>
+            </th>
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+  {% else %}
+    <p>No notes so far...</p>
+  {% endif %}
+</div>

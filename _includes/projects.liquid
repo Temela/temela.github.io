@@ -1,0 +1,45 @@
+<div class="grid-item">
+  <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
+    <div class="card hoverable">
+      {% if project.img %}
+        {%
+          include figure.liquid
+          path=project.img
+          sizes = "250px"
+          alt="project thumbnail"
+        %}
+      {% endif %}
+      <div class="card-body">
+        {% if project.title.size > 15 %}
+          <h2 class="card-title text-lowercase" style="font-size: 1.5rem">{{ project.title }}</h2>
+        {% else %}
+          <h2 class="card-title text-lowercase">{{ project.title }}</h2>
+        {% endif %}
+
+        <p class="card-text">{{ project.description }}</p>
+        <div class="row ml-1 mr-1 p-0">
+          {% if project.github %}
+            <div class="github-icon" style="margin-right: 5px">
+              <div class="icon" data-toggle="tooltip" title="Code Repository">
+                <a href="{{ project.github }}"><i class="fa-brands fa-github gh-icon" id="github-icon"></i></a>
+              </div>
+              {% if project.github_stars %}
+                <span class="stars" data-toggle="tooltip" title="GitHub Stars">
+                  <i class="fa-solid fa-star"></i>
+                  <span id="{{ project.github_stars }}-stars"></span>
+                </span>
+              {% endif %}
+            </div>
+          {% endif %}
+          {% if project.website %}
+            <div class="github-icon" style="margin-left: 5px">
+              <div class="icon" data-toggle="tooltip" title="Code Repository">
+                <a href="{{ project.website }}"><i class="fa-solid fa-arrow-up-right-from-square" id="github-icon"></i></a>
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </a>
+</div>

@@ -1,0 +1,73 @@
+<!-- Metadata, OpenGraph and Schema.org -->
+{% include metadata.liquid %}
+
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url | bust_file_cache }}">
+<!-- <link rel="stylesheet" href="{{ '/assets/css/mdb.min.css' | relative_url | bust_file_cache }}"> -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/mdbootstrap@{{ site.mdb.version }}/css/mdb.min.css"
+  integrity="{{ site.mdb.integrity.css }}"
+  crossorigin="anonymous"
+>
+
+<!-- Bootstrap Table -->
+<link defer rel="stylesheet" href="https://unpkg.com/bootstrap-table@{{ site.bootstrap-table.version }}/dist/bootstrap-table.min.css">
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="{{ '/assets/css/academicons.min.css' | relative_url | bust_file_cache }}">
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons"
+>
+
+<!-- Code Syntax Highlighting -->
+<link
+  rel="stylesheet"
+  href="{{ '/assets/css/gruvbox.dark.css' | relative_url | bust_file_cache }}"
+  media=""
+  id="highlight_theme_dark"
+>
+
+{% if page.toc and page.toc.sidebar %}
+  <!-- Sidebar Table of Contents -->
+  <link href="{{ '/assets/css/bootstrap-toc.min.css' | relative_url | bust_file_cache }}" rel="stylesheet">
+{% endif %}
+{% if page.tikzjax %}
+  <link defer rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+  <script defer src="https://tikzjax.com/v1/tikzjax.js"></script>
+{% endif %}
+
+<!-- Styles -->
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url | bust_css_cache }}">
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/icons/favicon-16x16.png">
+<link rel="manifest" href="/assets/img/icons/site.webmanifest">
+<link rel="mask-icon" href="/assets/img/icons/safari-pinned-tab.svg" color="#b6f29d">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<!-- Dark Mode -->
+{% if site.enable_darkmode %}
+  <link
+    rel="stylesheet"
+    href="{{ '/assets/css/gruvbox.dark.css' | relative_url | bust_file_cache }}"
+    media=""
+    id="highlight_theme_light"
+  >
+  <script src="{{ '/assets/js/theme.js' | relative_url | bust_file_cache }}"></script>
+{% endif %}
+
+<noscript>
+  <link
+    rel="stylesheet"
+    href="{{ '/assets/css/gruvbox.dark.css' | relative_url | bust_file_cache }}"
+    media=""
+    id="highlight_theme_light"
+  >
+</noscript>
