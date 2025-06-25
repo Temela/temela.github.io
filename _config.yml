@@ -1,7 +1,9 @@
 title: Your Site
 theme: minima
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  baseurl: ""        # if deploying to root
+
+baseurl: ""       # Set to "" if deploying to root (https://username.github.io/)
 url: "https://temela.github.io"
