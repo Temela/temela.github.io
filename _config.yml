@@ -3,3 +3,5 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  baseurl: ""        # if deploying to root
+url: "https://temela.github.io"
