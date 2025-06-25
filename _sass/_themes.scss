@@ -1,0 +1,113 @@
+/*******************************************************************************
+ * Themes
+ ******************************************************************************/
+
+:root {
+  --global-bg-color: #{$grey-color-dark};
+  --global-code-bg-color: #{$code-bg-color-dark};
+  --global-text-color: #{$grey-color-light};
+  --global-text-color-light: #{$grey-color-darker};
+  --global-theme-color: #{$green-color};
+  --global-hover-color: #{$green-color};
+  --global-hover-text-color: #{$white-color};
+  --global-footer-bg-color: #{$grey-color-light};
+  --global-footer-text-color: #{$grey-color-dark};
+  --global-footer-link-color: #{$black-color};
+  --global-distill-app-color: #{$grey-color-light};
+  --global-divider-color: #424246;
+  --global-card-bg-color: #{$grey-900};
+
+  --global-tip-block: #42b983;
+  --global-tip-block-bg: #e2f5ec;
+  --global-tip-block-text: #215d42;
+  --global-tip-block-title: #359469;
+  --global-warning-block: #e7c000;
+  --global-warning-block-bg: #fff8d8;
+  --global-warning-block-text: #6b5900;
+  --global-warning-block-title: #b29400;
+  --global-danger-block: #c00;
+  --global-danger-block-bg: #ffe0e0;
+  --global-danger-block-text: #600;
+  --global-danger-block-title: #c00;
+
+  --global-album-tier-bad: #e56565;
+  --global-album-tier-mid: #f8bc4c;
+  --global-album-tier-good: #75b200;
+  --global-album-tier-great: #00c0ef;
+  --global-album-tier-amazing: #f583ca;
+  --global-album-tier-perfect: #b6fffd;
+  --global-album-tier-legendary: #b2f4e3;
+
+  --global-key-bg-color: rgba(51, 51, 51, 0.44);
+
+  .fa-sun {
+    padding-left: 10px;
+    padding-top: 12px;
+    display: block;
+  }
+  .fa-moon {
+    display: none;
+  }
+
+  .repo-img-light {
+    display: none;
+  }
+  .repo-img-dark {
+    display: block;
+  }
+}
+
+html[data-theme="light"] {
+  --global-bg-color: #{$white-color};
+  --global-code-bg-color: #{$code-bg-color-light};
+  --global-text-color: #{$black-color};
+  --global-text-color-light: #{$grey-color};
+  --global-theme-color: #{$green-color-dark};
+  --global-hover-color: #{$green-color-dark};
+  --global-hover-text-color: #{$white-color};
+  --global-footer-bg-color: #{$grey-color-dark};
+  --global-footer-text-color: #{$grey-color-light};
+  --global-footer-link-color: #{$white-color};
+  --global-distill-app-color: #{$grey-color};
+  --global-divider-color: rgba(0, 0, 0, 0.1);
+  --global-card-bg-color: #{$white-color};
+
+  --global-tip-block: #42b983;
+  --global-tip-block-bg: #e2f5ec;
+  --global-tip-block-text: #215d42;
+  --global-tip-block-title: #359469;
+  --global-warning-block: #e7c000;
+  --global-warning-block-bg: #fff8d8;
+  --global-warning-block-text: #6b5900;
+  --global-warning-block-title: #b29400;
+  --global-danger-block: #c00;
+  --global-danger-block-bg: #ffe0e0;
+  --global-danger-block-text: #600;
+  --global-danger-block-title: #c00;
+
+  --global-album-tier-bad: #ff2a04;
+  --global-album-tier-mid: #ff5f15;
+  --global-album-tier-good: #319236;
+  --global-album-tier-great: #4c51f7;
+  --global-album-tier-amazing: #9d4dbb;
+  --global-album-tier-perfect: #92b2ff;
+  --global-album-tier-legendary: #b2f4e3;
+
+  --global-key-bg-color: rgb(239, 241, 244);
+
+  .fa-sun {
+    display: none;
+  }
+  .fa-moon {
+    padding-left: 10px;
+    padding-top: 12px;
+    display: block;
+  }
+
+  .repo-img-light {
+    display: block;
+  }
+  .repo-img-dark {
+    display: none;
+  }
+}

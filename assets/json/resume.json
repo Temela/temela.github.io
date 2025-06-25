@@ -1,0 +1,487 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Andrew Boyer",
+    "label": "CS @ Georgia Tech",
+    "image": "",
+    "email": "asboyer.com@gmail.com",
+    "phone": "",
+    "url": "https://asboyer.com",
+    "summary": "Interested in all things computers and math. I am always looking for an opportunity to explore interests, express creativity, and learn. ",
+    "location": {
+      "city": "Atlanta",
+      "countryCode": "US",
+      "region": "Georgia"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "asboyer",
+        "url": "https://www.linkedin.com/in/asboyer/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "theCoderSchool",
+      "position": "Staff Instructor",
+      "startDate": "2020-09-30",
+      "endDate": "2022-09-30",
+      "highlights": [],
+      "summary": "Teaching kids ages six to fifteen programming in Python, Scratch, Bash, Java, and JavaScript. Developing curriculum and leading sessions of one to five students through project and lecture based learning.",
+      "url": "https://www.linkedin.com/company/thecoderschool/",
+      "location": "Sudbury, Massachusetts, United States"
+    },
+    {
+      "name": "Massachusetts General Hospital",
+      "position": "Research Student",
+      "startDate": "2021-08-31",
+      "endDate": "2022-03-31",
+      "highlights": [],
+      "summary": "Department of Neurology, Research. Worked on data analysis and machine learning.",
+      "url": "https://www.linkedin.com/company/massachusetts-general-hospital/"
+    },
+    {
+      "name": "Cyber Summer Camp",
+      "position": "Founder",
+      "startDate": "2020-06-30",
+      "endDate": "2022-03-31",
+      "highlights": [],
+      "summary": "Directing and leading camps to teach younger students about computer security. Developed all curriculum.",
+      "url": "https://www.linkedin.com/company/cyber-summer-camp/",
+      "location": "Wayland, Massachusetts, United States"
+    },
+    {
+      "name": "IntelyCare",
+      "position": "Data Science Intern",
+      "startDate": "2021-08-31",
+      "endDate": "2021-09-30",
+      "highlights": [],
+      "summary": "Worked on analyzing data sets with Python programming and data analysis tools.",
+      "url": "https://www.linkedin.com/company/intelycare/"
+    },
+    {
+      "name": "IntelyCare",
+      "position": "Product Intern",
+      "startDate": "2021-07-31",
+      "endDate": "2021-08-31",
+      "highlights": [],
+      "summary": "Leveraged technical writing to document key workflows for product team.",
+      "url": "https://www.linkedin.com/company/intelycare/"
+    },
+    {
+      "name": "IntelyCare",
+      "position": "Automation Engineer Intern",
+      "startDate": "2021-03-31",
+      "endDate": "2021-06-30",
+      "highlights": [],
+      "summary": "Worked with quality assurance team to create web automation test scripts.",
+      "url": "https://www.linkedin.com/company/intelycare/"
+    },
+    {
+      "name": "Wayland Student Press Network",
+      "position": "Guest Contributor ",
+      "startDate": "2020-09-30",
+      "endDate": "2021-06-30",
+      "highlights": [],
+      "url": "https://www.linkedin.com/company/wayland-student-press-network/"
+    },
+    {
+      "name": "Wayland Student Press Network",
+      "position": "Staff Reporter",
+      "startDate": "2019-09-30",
+      "endDate": "2020-08-31",
+      "highlights": [],
+      "summary": "Co-founder of Half Hour Hook and music reviewer",
+      "url": "https://www.linkedin.com/company/wayland-student-press-network/"
+    },
+    {
+      "name": "Wayland Town Soccer",
+      "position": "Sports Referee",
+      "startDate": "2018-08-31",
+      "endDate": "2020-11-30",
+      "highlights": [],
+      "summary": "Refereed soccer games for Wayland Town Soccer and BAYS.",
+      "url": "https://www.linkedin.com/company/wayland-town-soccer/",
+      "location": "Wayland, Massachusetts, United States"
+    },
+    {
+      "name": "Neurture",
+      "position": "Software Engineering Intern",
+      "startDate": "2024-05-06",
+      "endDate": "2024-08-06",
+      "highlights": [],
+      "summary": "Worked on app development and UI/UX design.",
+      "url": "https://neurtureapp.com/",
+      "location": "Remote",
+      "homepage_keyword": "Internship",
+      "homepage_description": "software engineering intern",
+      "homepage_title": "Neurture",
+      "homepage": false,
+      "img": "assets/img/roles/intern/neurture.png",
+      "redirect": "https://neurtureapp.com/"
+    },
+    {
+      "name": "College of Computing",
+      "position": "Academic Tutor",
+      "startDate": "2024-08-06",
+      "endDate": "2024-12-01",
+      "highlights": [],
+      "summary": "With students to enhance course engagement and understanding of material.",
+      "url": "https://www.cc.gatech.edu/tutoring-assistance",
+      "location": "Atlanta, GA",
+      "homepage_keyword": "Tutor",
+      "homepage_description": "Academic tutor",
+      "homepage_title": "College of Computing",
+      "homepage": false,
+      "img": "assets/img/roles/edu/gatech.png",
+      "redirect": "https://www.cc.gatech.edu/tutoring-assistance"
+    },
+    {
+      "name": "Stealth AI Startup",
+      "position": "Software Engineering Intern",
+      "startDate": "2025-01-06",
+      "highlights": [],
+      "summary": "",
+      "location": "Cambridge, MA",
+      "homepage_keyword": "Full-time",
+      "homepage_description": "Software Engineering Intern",
+      "homepage_title": "Stealth AI Startup",
+      "homepage": true,
+      "img": "assets/img/roles/intern/stealth.png"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Georgia Institute of Technology",
+      "area": "Computer Science",
+      "url": "https://gatech.edu",
+      "studyType": "Bachelor of Science - BS",
+      "startDate": "2023-05-31",
+      "score": "",
+      "major_gpa": "4.0",
+      "courses": [
+        "CS 1332 - Data Structures & Algorithms",
+        "CS 2050 - Discrete Mathematics",
+        "CS 2110 - Computer Organization and Programming",
+        "CS 2200 - Computer Systems and Networks",
+        "CS 2340 - Objects and Design",
+        "CS 3510 - Design & Analysis of Algorithms",
+        "CS 4400 - Database Systems"
+      ],
+      "homepage_keyword": "Senior",
+      "homepage_description": "B.S. Computer Science",
+      "homepage_title": "Georgia Tech",
+      "homepage": true,
+      "location": "Atlanta, GA",
+      "img": "assets/img/roles/edu/gatech.png",
+      "redirect": "https://directory.gatech.edu/directory/detail/Andrew/Boyer?dn=ZnUPgG7TRJIo1QcqJFfjAfNGjE%2BJf2zzmGiOToNIXG8YW6T9aPf9YRhnOHmk5oTS"
+    },
+    {
+      "institution": "Arizona State University",
+      "area": "Computer Science",
+      "url": "https://asu.edu",
+      "studyType": "Bachelor of Science - BS",
+      "startDate": "2022-08-31",
+      "endDate": "2023-05-31",
+      "score": "",
+      "gpa": "4.33",
+      "courses": [
+        "MAT 267 - Calculus III for Engineers",
+        "CSE 205 - Object-Oriented Programming & Data",
+        "CSE 240 - Programming Languages",
+        "BIO 181 - Biology I",
+        "BIO 182 - Biology II"
+      ]
+    },
+    {
+      "institution": "Wayland High School ",
+      "area": "",
+      "studyType": "High School Diploma",
+      "startDate": "2018-12-31",
+      "endDate": "2022-12-31",
+      "score": "",
+      "courses": ["AP Statistics", "AP Computer Science A", "AP Calculus BC"]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Boy Scouts of America",
+      "position": "Eagle Scout",
+      "startDate": "2011-09-30",
+      "endDate": "2011-09-30",
+      "summary": "Active member of Troop 156 from 2011 - 2019, achieved Eagle Scout award.",
+      "highlights": [],
+      "url": "https://www.linkedin.com/company/8118"
+    },
+    {
+      "organization": "Reboot Hacks",
+      "position": "Founder and Executive Director ",
+      "startDate": "2020-09-30",
+      "endDate": "2022-06-30",
+      "summary": "Building the next-generation of New England tech events for students.",
+      "highlights": [],
+      "url": "https://www.linkedin.com/company/76358633"
+    },
+    {
+      "organization": "Transfer2Tech",
+      "position": "Student Mentor",
+      "startDate": "2024-08-05",
+      "summary": "Mentor undergraduate students as they transition from a new school.",
+      "highlights": [],
+      "url": "https://www.mentorcollective.org/"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Xerox Award for Innovation and Information Technology",
+      "date": "2021-06-30",
+      "awarder": "University of Rochester High School Awards Program",
+      "summary": "For outstanding achievement in the pursuit of innovative approaches and an appreciation for the possibilities of technology"
+    },
+    {
+      "title": "Achievement Award - Honors English ",
+      "date": "2020-06-30",
+      "awarder": null,
+      "summary": "Best academic performance in Honors English 2 (2020)"
+    },
+    {
+      "title": "Eagle Scout",
+      "date": "2019-09-30",
+      "awarder": "Boy Scouts of America",
+      "summary": "Highest achievement and rank attainable in the Scouts BSA program of the Boy Scouts of America"
+    },
+    {
+      "title": "Achievement Award - Honors Mandarin",
+      "date": "2019-06-30",
+      "awarder": null,
+      "summary": "Best academic performance in Honors Mandarin (2019)"
+    },
+    {
+      "title": "Outstanding Exchange Student ",
+      "date": "2019-05-31",
+      "awarder": "Jingshan Yuanyang School",
+      "summary": "Attended the JSYY school in Beijing, China. Studied abroad, traveled, and lived with a host family"
+    },
+    {
+      "title": "Honor Roll: High Honors",
+      "date": "2018-09-30",
+      "awarder": null,
+      "summary": "Students who earn an unweighted GPA above 3.6 and meet the requirements for the honor roll are named to the high honors list"
+    },
+    {
+      "title": "Dean's List",
+      "date": "2024-12-01",
+      "awarder": null,
+      "summary": "Georgia Tech Fall Semester 2024"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Goat Grade",
+      "startDate": "2020-02-28",
+      "summary": "Web scraping basketball statistics and ranking players using our algorithm, displaying rankings on website",
+      "url": "http://goatgrade.com"
+    },
+    {
+      "name": "Reporty",
+      "startDate": "2020-06-30",
+      "summary": "Reporty is an open source python library that contains useful functions for organizing and distributing visual data",
+      "url": "https://pypi.org/project/reporty/",
+      "endDate": "2020-11-30"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Referee",
+      "issuer": "Wayland Town Soccer",
+      "endDate": "2021-01-31",
+      "startDate": "2018-09-30"
+    },
+    {
+      "name": "Biomedical Research Investigators and Key Personnel",
+      "issuer": "CITI Program",
+      "endDate": "2024-08-31",
+      "startDate": "2021-08-31",
+      "url": "https://www.citiprogram.org/verify/?wb8aa41e8-9d8d-4151-80e0-f2a32e5a1731-43871376"
+    },
+    {
+      "name": "CITI Good Clinical Practice Course",
+      "issuer": "CITI Program",
+      "endDate": "2024-08-31",
+      "startDate": "2021-08-31",
+      "url": "https://www.citiprogram.org/verify/?wbd7664c8-9561-4d26-8a4a-3a6b059c14e1-43871377"
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Python",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Git",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Programming",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Marketing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Quality Assurance",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Data Science",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Teaching",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Java",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Computer Hardware",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Cascading Style Sheets (CSS)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Information Technology",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Chinese",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Curriculum Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Linux System Administration",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Computer Hardware Assembly",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Computer Science",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Kali Linux",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Leadership",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "English",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Cybersecurity",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Microsoft Excel",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "JavaScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Bash",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Communication",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Linux",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML5",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "fluency": "Native Speaker",
+      "language": "English"
+    },
+    {
+      "fluency": "Limited Working",
+      "language": "Chinese "
+    }
+  ],
+  "interests": [
+    {
+      "name": "Computers",
+      "keywords": ["Software Development", "Hardware Assembly"]
+    },
+    {
+      "name": "Entrepreneurship",
+      "keywords": ["Business development", "Sales/Marketing"]
+    }
+  ],
+  "references": [
+    {
+      "name": "Benjamin Tengelsen",
+      "reference": "Mentor, Data Scientist at IntelyCare"
+    },
+    {
+      "name": "Caroline Yee",
+      "reference": "Supervisor, GM at theCoderSchool Sudbury"
+    },
+    {
+      "name": "Ben Peterson",
+      "reference": "Scouting/Youth Leader, Interventional Cardiologist"
+    }
+  ],
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+  }
+}

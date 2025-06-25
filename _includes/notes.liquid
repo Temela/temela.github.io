@@ -1,0 +1,55 @@
+<div class="news">
+  {% if site.notes != blank %}
+    {% assign news_size = site.notes | size %}
+    <div
+      class="table-responsive"
+    >
+      <table class="table table-sm table-borderless">
+        {% assign news = site.notes | reverse %}
+        {% if include.limit and site.latest_notes.limit %}
+          {% assign news_limit = site.latest_notes.limit %}
+        {% else %}
+          {% assign news_limit = news_size %}
+        {% endif %}
+        {% for item in news limit: news_limit %}
+          <tr>
+            <th scope="row" id="date">
+              <span id="date_text">{{ item.date | date: '%-m/%-d/%y' }}</span>
+            </th>
+            <td>
+              {% if item.inline %}
+                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+                {% if item.redirect == blank %}
+                {% else %}
+                  {% if item.redirect %}
+                    {% if item.redirect contains '://' %}
+                      <a class="news-title" href="{{ item.redirect }}" target="_blank">{{ item.title }}</a>
+                      <i class="fas fa-external-link fa-xs" style="color: var(--global-text-color-light)"></i>
+                    {% else %}
+                      <a class="news-title" href="{{ item.redirect | relative_url }}">{{ item.title }}</a>
+                    {% endif %}
+                  {% endif %}
+                {% endif %}
+              {% else %}
+                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+              {% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+  {% else %}
+    <p>No notes so far...</p>
+  {% endif %}
+  {% if include.in_page %}
+    <style>
+      .container.mt-5 {
+        max-width: 500px !important;
+      }
+
+      #date {
+        width: 20%;
+      }
+    </style>
+  {% endif %}
+</div>

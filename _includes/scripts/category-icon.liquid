@@ -1,0 +1,120 @@
+{%- if include.category contains 'book' -%}
+  <i
+    class="fa-solid fa-book"
+    {% if include.styles -%}
+      style="{{ include.styles }}"
+    {%- endif -%}
+  ></i>
+{%- elsif include.category contains 'movie' -%}
+  <i
+    class="fa-solid fa-film"
+    {% if include.styles -%}
+      style="{{ include.styles }}"
+    {%- endif -%}
+  ></i>
+{%- elsif include.category contains 'album' -%}
+  <i
+    class="fa-solid fa-compact-disc"
+    {% if include.styles -%}
+      style="{{ include.styles }}"
+    {%- endif -%}
+  ></i>
+{%- elsif include.category contains 'playlist' -%}
+  <i
+    class="fa-solid fa-headphones"
+    {% if include.styles -%}
+      style="{{ include.styles }}"
+    {%- endif -%}
+  ></i>
+{%- elsif include.category contains 'song' -%}
+  <i
+    class="fa-solid fa-music"
+    {% if include.styles -%}
+      style="{{ include.styles }}"
+    {%- endif -%}
+  ></i>
+{%- elsif include.category contains 'show' -%}
+  <i
+    class="fa-solid fa-tv"
+    {% if include.styles -%}
+      style="{{ include.styles }}"
+    {%- endif -%}
+  ></i>
+{%- elsif include.category == 'video-games' -%}
+  <i
+    class="fa-solid fa-gamepad"
+    {% if include.styles -%}
+      style="{{ include.styles }}"
+    {%- endif -%}
+  ></i>
+{%- elsif include.category == 'vinyls' -%}
+  <i
+    class="fa-solid fa-record-vinyl"
+    {% if include.styles -%}
+      style="{{ include.styles }}"
+    {%- endif -%}
+  ></i>
+{%- elsif include.category == 'goats' -%}
+  <i
+    class="fa-solid fa-trophy"
+    {% if include.styles -%}
+      style="{{ include.styles }}"
+    {%- endif -%}
+  ></i>
+{%- elsif include.category == 'podcasts' -%}
+  <i
+    class="fa-solid fa-microphone"
+    {% if include.styles -%}
+      style="{{ include.styles }}"
+    {%- endif -%}
+  ></i>
+{%- elsif include.category == 'articles' -%}
+  <i
+    class="fa-solid fa-newspaper"
+    {% if include.styles -%}
+      style="{{ include.styles }}"
+    {%- endif -%}
+  ></i>
+{%- elsif include.category == 'news' -%}
+  <i
+    class="fa-solid fa-newspaper"
+    {% if include.styles -%}
+      style="{{ include.styles }}"
+    {%- endif -%}
+  ></i>
+{%- elsif include.category == 'blog' -%}
+  <i
+    class="fa-solid fa-newspaper"
+    {% if include.styles -%}
+      style="{{ include.styles }}"
+    {%- endif -%}
+  ></i>
+{%- elsif include.category == 'reviews' -%}
+  <i
+    class="fa-solid fa-newspaper"
+    {% if include.styles -%}
+      style="{{ include.styles }}"
+    {%- endif -%}
+  ></i>
+{%- elsif include.category == 'interviews' -%}
+  <i
+    class="fa-solid fa-newspaper"
+    {% if include.styles -%}
+      style="{{ include.styles }}"
+    {%- endif -%}
+  ></i>
+{%- elsif include.category == 'features' -%}
+  <i
+    class="fa-solid fa-newspaper"
+    {% if include.styles -%}
+      style="{{ include.styles }}"
+    {%- endif -%}
+  ></i>
+{%- else -%}
+  <i
+    class="fa-solid fa-hashtag"
+    {% if include.styles -%}
+      style="{{ include.styles }}"
+    {%- endif -%}
+  ></i>
+{%- endif -%}
