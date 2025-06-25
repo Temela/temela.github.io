@@ -1,0 +1,229 @@
+---
+layout: default
+---
+{% assign year = page.date | date: '%Y' %}
+{% assign tags = page.tags | join: '' %}
+{% assign categories = page.categories | join: '' %}
+{% assign authors = page.authors | join: '' %}
+
+{% if page._styles %}
+  <!-- Page/Post style -->
+  <style type="text/css">
+    {{ page._styles }}
+  </style>
+{% endif %}
+
+{% assign url_beginning = page.url | slice: 0, 6 %}
+
+<div class="post">
+  <header class="post-header">
+    <h1
+      style="margin-bottom: 5px !important; line-height: 1 !important"
+      {% if page.creator %}
+      {% endif %}
+      class="post-title"
+    >
+      {{ page.title }}
+    </h1>
+    {% if page.creator %}
+      by {{ page.creator }}
+    {% endif %}
+    {% if page.creator and page.released %}&nbsp;&middot;&nbsp;{% endif %}
+    {% if page.released %}
+      <em>{{ page.released }}</em>
+    {% endif %}
+    {% if page.creator or page.released %}
+      {% if page.location %}&nbsp;&middot;&nbsp;{% endif -%}
+    {%- endif %}
+    {% if page.creator or page.released -%}
+      {%- if page.album %}&nbsp;&middot;&nbsp;{% endif -%}
+    {%- endif %}
+    {% if page.album %}
+      {% if page.album_link %}
+        {% if page.album_link contains 'spotify' %}
+          {% assign icon = 'fa-brands fa-spotify' %}
+        {% elsif page.album_link contains 'soundcloud' %}
+          {% assign icon = 'fa-brands fa-soundcloud' %}
+        {% elsif page.album_link contains 'youtube' %}
+          {% assign icon = 'fa-brands fa-youtube' %}
+        {% else %}
+          {% assign icon = 'fa-solid fa-link' %}
+        {% endif %}
+        <i class="{{ icon }}"></i> <a href="{{ page.album_link }}" target="_blank">{{ page.album -}}</a>
+      {% else %}
+        {% assign exist_album = true %}
+        {% for fav in site.favs %}
+          {% if fav.title contains page.album %}
+            {% assign exist_album = false %}
+            {% if fav.vinyl %}
+              <i class="fa-solid fa-record-vinyl" style="color: var(--global-theme-color) !important"></i>
+              <a href="{{ fav.url }}">{{- page.album -}}</a>
+            {% else %}
+              <i class="fa-solid fa-compact-disc"></i> <a href="{{ fav.url }}">{{ page.album -}}</a>
+            {% endif %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+        {% if exist_album %}
+          <i class="fa-solid fa-compact-disc"></i> {{ page.album }}
+        {% endif %}
+      {% endif %}
+    {% endif %}
+    {% if page.location %}
+      <i class="fa-solid fa-location-dot"></i> {{ page.location }}
+    {% endif %}
+    {% if page.vinyl -%}
+      {% if page.vinyl_link %}
+        {% assign vinyl_link = page.vinyl_link %}
+      {% else %}
+        {% assign vinyl_link = '/vinyls/' %}
+      {% endif %}
+      &nbsp;&middot;&nbsp;&nbsp;<a href="{{ vinyl_link }}"
+        ><i class="fa-solid fa-record-vinyl" style="color: var(--global-theme-color) !important"></i
+      ></a>
+    {%- endif %}
+    {% if page.perfect -%}
+      &nbsp;&middot;&nbsp;&nbsp;<a href="/goats/"><i class="fa-solid fa-trophy" style="color: var(--global-theme-color) !important"></i></a>
+    {%- endif %}
+
+    <p
+      {% if page.creator %}
+        style="margin-top: 5px"
+      {% endif -%}
+      class="post-meta"
+    >
+      <i class="fa-solid fa-pen fa-sm"></i> {{ page.date | date: '%B %d, %Y' }}
+      {% if page.author %}&nbsp; &middot; &nbsp;{{ page.author }}{% endif %}
+      {% if page.meta %} • {{ page.meta }}{% endif %}
+
+      {% if authors != '' %}
+        &nbsp; &middot; &nbsp;
+        {% for author in page.authors %}
+          {% if url_beginning == '/blog/' %}
+            <a href="{{ author | slugify | prepend: '/blog/category/' | prepend: site.baseurl}}">
+              <i id="light-tag" class="fa-solid fa-at fa-sm"></i> {{ author -}}
+            </a>
+            &nbsp;
+          {% else %}
+            <i class="fa-solid fa-at fa-sm"></i> {{ author }} &nbsp;
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+
+      {% for category in page.categories %}
+        &nbsp; &middot; &nbsp;
+        {% include scripts/category-icon.liquid category=category %}
+        <a href="{{ category | slugify | prepend: '/favs/' | relative_url }}">{{ category }}</a>
+      {% endfor %}
+    </p>
+    {% if page.started or page.finished or page.stars %}
+      <p class="post-tags" style="font-size: .875em; padding-bottom: 0px !important">
+        {% if page.started %}
+          <i class="fa-solid fa-play fa-sm" style="color: var(--global-tip-block) !important"></i> <em>{{ page.started }}</em>
+        {% endif %}
+        {% if page.started and page.finished %}
+          &nbsp; &middot; &nbsp;
+        {% endif %}
+        {% if page.finished %}
+          <i class="fa-solid fa-stop fa-sm" style="color: var(--global-album-tier-bad) !important"></i> <em>{{ page.finished }}</em>
+        {% endif %}
+        {% if page.started or page.finished %}
+          {% if page.stars %}
+            &nbsp; &middot; &nbsp;
+          {% endif %}
+        {% endif %}
+        {% if page.stars %}
+          {% if page.star_link %}
+            <style>
+              .post .post-tags i {
+                color: var(--global-theme-color) !important;
+              }
+            </style>
+            <a target="_blank" href="{{ page.star_link }}">
+          {% endif %}
+          {% assign full_stars = page.stars | floor %}
+          {% assign half_star = page.stars | minus: full_stars %}
+          {% assign empty_stars = 5 | minus: full_stars %}
+          {% if half_star > 0 %}
+            {% assign empty_stars = empty_stars | minus: 1 %}
+          {% endif %}
+          {% for i in (1..full_stars) -%}
+            <i class="fa-solid fa-star fa-sm"></i>
+          {%- endfor -%}
+          {%- if half_star > 0 %}<i class="fa-solid fa-star-half-stroke fa-sm"></i>{% endif -%}
+          {%- for i in (1..empty_stars) -%}
+            <i class="fa-regular fa-star fa-sm"></i>
+          {%- endfor -%}
+          {% if page.star_link %}
+            </a>
+          {% endif %}
+        {% endif %}
+      </p>
+    {% endif %}
+    <hr>
+  </header>
+
+  <article class="post-content">
+    {% if page.admin_note %}
+      <h3 class="author-note-title"><i id="note-icon" class="fas fa-at"></i>&nbsp;a note from asboyer</h3>
+      <div id="author-note">
+        {{ page.admin_note }}
+      </div>
+    {% endif %}
+    {% if page.admin_note and page.note %}
+      <span style="margin: 5px"></span>
+    {% endif %}
+    {% if page.note %}
+      {% if page.warning %}
+        <h3 class="author-note-title"><i id="note-icon-warning" class="fa-solid fa-triangle-exclamation"></i>&nbsp;a note from the author</h3>
+        <div id="author-note-warning">
+          {{ page.note }}
+        </div>
+      {% else %}
+        <h3 class="author-note-title"><i id="note-icon" class="fas fa-sticky-note"></i>&nbsp;a note from the author</h3>
+        <div id="author-note">
+          {{ page.note }}
+        </div>
+      {% endif %}
+    {% endif %}
+    {% if page.note or page.admin_note %}
+      <hr>
+    {% endif %}
+
+    {% if page.toc and page.toc.beginning %}
+      <div id="table-of-contents">
+        {% toc %}
+      </div>
+      <hr>
+    {% endif %}
+    <div id="markdown-content" style="margin-top: 15px">
+      {% if page.img %}
+        {% if page.inline %}
+          {% include fav_profile.liquid image=page.img title=page.title artist=page.creator score=page.score %}
+        {% elsif page.categories contains 'songs' %}
+          {% include song.liquid image=page.img title=page.title artist=page.creator link=page.link score=page.score %}
+        {% elsif page.categories contains 'albums' or page.score %}
+          {% include album.liquid image=page.img title=page.title artist=page.creator link=page.link score=page.score %}
+        {% else %}
+          {% include fav_profile.liquid image=page.img title=page.title artist=page.creator link=page.link score=page.score content=page.opener %}
+        {% endif %}
+      {% endif %}
+      {% if page.inline %}
+      {% elsif page.redirect %}
+        {% if page.redirect contains '://' %}
+        {% else %}
+          {{ content }}
+        {% endif %}
+      {% else %}
+        {{ content }}
+      {% endif %}
+    </div>
+  </article>
+
+  {% if site.disqus_shortname and page.disqus_comments %}
+    {% include disqus.liquid %}
+  {% endif %}
+  {% if site.giscus and page.giscus_comments %}
+    {% include giscus.liquid %}
+  {% endif %}
+</div>
