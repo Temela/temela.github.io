@@ -2,10 +2,7 @@ name: Build and Deploy Jekyll Site
 
 on:
   push:
-    branches: [main]  # make sure your default branch is 'main'
-
-permissions:
-  contents: write  # required for gh-pages deployment
+    branches: [main]  # Adjust if your default branch is different
 
 jobs:
   build-deploy:
@@ -18,11 +15,13 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.2.4  # compatible with GitHub Pages
+          ruby-version: 3.2.4          # Match this with your Gemfile ruby version
           bundler-cache: true
 
       - name: Install dependencies
-        run: bundle install
+        run: |
+          bundle config set --local path 'vendor/bundle'
+          bundle install
 
       - name: Build Jekyll site
         run: bundle exec jekyll build
@@ -32,3 +31,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
+          publish_branch: gh-pages
