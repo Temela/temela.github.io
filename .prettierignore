@@ -1,9 +1,0 @@
-robots.txt
-**/*.min.css
-**/*.min.js
-assets/css/main.scss
-assets/plotly/demo.html
-*.py
-assets/js/search-data.js
-assets/js/search/*.js
-*.md
