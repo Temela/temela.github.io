@@ -35,7 +35,7 @@ jobs:
           ruby-version: "3.2.2"
           bundler-cache: true
       - name: Update _config.yml ⚙️
-        uses: fjogeleit/yaml-update-action@v1.0.0
+        uses: fjogeleit/yaml-update-action@v1.8.0
         with:
           commitChange: false
           valueFile: "_config.yml"

@@ -19,7 +19,6 @@ jobs:
             --exclude-path _pages/404.md
             --exclude-path _pages/blog.md
             --exclude-path _posts/2018-12-22-distill.md
-            --exclude-status 403
             --exclude "https://*.google.com/*"
             --exclude "https://*.scopus.com/*"
             --exclude "https://telegram.me/*"
