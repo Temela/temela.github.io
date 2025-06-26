@@ -2,6 +2,6 @@
 layout: home
 title: Welcome
 ---
-# Hello World, na me
+# Hello World!
 
 This is my new site.
