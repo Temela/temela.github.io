@@ -14,11 +14,16 @@ jobs:
         uses: lycheeverse/lychee-action@v1.10.0
         with:
           fail: true
-          args: |
+          args: >
             --exclude-path README.md
             --exclude-path _pages/404.md
             --exclude-path _pages/blog.md
             --exclude-path _posts/2018-12-22-distill.md
+            --exclude https://www.linux.org/
+            --exclude https://www.java.com/
+            --exclude https://dev.mysql.com/downloads/mysql/
+            --exclude "https://www.discogs.com/user/asboyer/collection?page=1&sort=added%2Cdesc&folder=0&limit=100"
+            --exclude https://play.picoctf.org/events/34/scoreboards#35
             --verbose
             --no-progress
             './**/*.md'
