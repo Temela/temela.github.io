@@ -1,0 +1,25 @@
+# Load the main config
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+# Inherit from _config.yml
+include: [_config.yml]
+
+plugins:
+  - jekyll-archives
+  - jekyll-email-protect
+  - jekyll-feed
+  - jekyll-get-json
+  - jekyll-imagemagick
+  - jekyll-jupyter-notebook
+  - jekyll-link-attributes
+  - jekyll-minifier
+  - jekyll-paginate-v2
+  - jekyll-scholar
+  - jekyll-sitemap
+  - jekyll-toc
+  - jekyll-twitter-plugin
+  - jemoji

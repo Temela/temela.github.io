@@ -24,3 +24,13 @@ group :other_plugins do
     gem 'feedjira'
     gem 'httparty'
 end
+# For GitHub Pages
+gem "github-pages", group: :jekyll_plugins
+
+# Local-only plugins
+group :jekyll_plugins_local do
+  gem "jekyll-imagemagick"
+  gem "jekyll-scholar"
+  gem "mini_racer"
+end
+
