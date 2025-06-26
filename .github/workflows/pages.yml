@@ -28,3 +28,4 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v2
+        # Trigger redeploy: touched file to bust cache
