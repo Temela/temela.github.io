@@ -1,0 +1,51 @@
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    bundler (2.5.7)
+    jekyll (4.3.3)
+    jekyll-archives (2.2.1)
+    jekyll-email-protect (1.1.1)
+    jekyll-feed (0.17.0)
+    jekyll-get-json (0.1.2)
+    jekyll-imagemagick (1.1.1)
+    jekyll-jupyter-notebook! (1.0.1)
+    jekyll-link-attributes (1.0.1)
+    jekyll-minifier (0.1.11)
+    jekyll-paginate-v2 (3.0.0)
+    jekyll-scholor! (7.0.0)
+    jekyll-seo-tag (2.8.0)
+    jekyll-sitemap (1.4.0)
+    jekyll-toc (0.18.1)
+    jekyll-twitter-plugin (2.0.0)
+    jemoji (0.13.0)
+    webrick (1.8.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler
+  jekyll (~> 4.3.3)
+  jekyll-archives
+  jekyll-email-protect
+  jekyll-feed
+  jekyll-get-json
+  jekyll-imagemagick
+  jekyll-jupyter-notebook!
+  jekyll-link-attributes
+  jekyll-minifier
+  jekyll-paginate-v2
+  jekyll-scholor!
+  jekyll-seo-tag
+  jekyll-sitemap
+  jekyll-toc
+  jekyll-twitter-plugin
+  jemoji
+  webrick
+
+RUBY VERSION
+   ruby 3.2.4p0
+
+BUNDLED WITH
+   2.5.7

@@ -2,6 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
+<<<<<<< HEAD
 title: asboyer.com # the website title (if blank, full name will be used instead)
 first_name: Andrew
 middle_name: S.
@@ -19,11 +20,32 @@ url: https://asboyer.com # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: true # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
+=======
+title: 
+first_name: Anthony
+middle_name: C.
+last_name: NDUKA
+email: #
+description: > 
+  Hi, it's Toneey here, and this is my academic portfolio.
+  You can find more about what I’m up to and what I find interesting.
+footer_text: >
+keywords: tony, nduka, anthony, tech-blog, data-science, health-tech, hcc, human-computer-interactions
+lang: en
+icon: logo/alt-logo.png
+
+url: "https://temela.github.io"
+baseurl: ""
+
+last_updated: true
+impressum_path:
+>>>>>>> 23791b5a9145be7e558c167f46e609429a584f56
 
 # -----------------------------------------------------------------------------
 # Theme
 # -----------------------------------------------------------------------------
 
+<<<<<<< HEAD
 # repo color theme
 repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
@@ -37,6 +59,14 @@ repo_trophies:
 # -----------------------------------------------------------------------------
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
+=======
+repo_theme_light: default
+repo_theme_dark: dark
+repo_trophies:
+  enabled: true
+  theme_light: flat
+  theme_dark: gitdimmed
+>>>>>>> 23791b5a9145be7e558c167f46e609429a584f56
 
 rss_icon: true
 
@@ -48,6 +78,7 @@ navbar_fixed: true
 footer_fixed: false
 search_enabled: true
 socials_in_search: true
+<<<<<<< HEAD
 
 # Dimensions
 max_width: 800px
@@ -62,11 +93,19 @@ max_width: 800px
 serve_og_meta: true # Include Open Graph meta tags in the HTML head
 serve_schema_org: true # Include Schema.org in the HTML head
 og_image: /assets/img/logo/l.png # The site-wide (default for all links) Open Graph preview image
+=======
+max_width: 800px
+
+serve_og_meta: true
+serve_schema_org: true
+og_image: /assets/img/logo/l.png
+>>>>>>> 23791b5a9145be7e558c167f46e609429a584f56
 
 # -----------------------------------------------------------------------------
 # Social integration
 # -----------------------------------------------------------------------------
 
+<<<<<<< HEAD
 github_username: asboyer # your GitHub user name
 gitlab_username: # your GitLab user name
 x_username: # your X handle
@@ -106,11 +145,20 @@ wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.
 goodreads_id: 173256339-asboyer # your goodreads id
 
 contact_note: > #
+=======
+github_username: temela
+x_username: _tchiemela
+linkedin_username: tchiemela
+orcid_id: 
+kaggle_id: 
+contact_note: > Reach me via tchiemela@gmail.com
+>>>>>>> 23791b5a9145be7e558c167f46e609429a584f56
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
 # -----------------------------------------------------------------------------
 
+<<<<<<< HEAD
 # For Google Analytics, see https://support.google.com/analytics/answer/10447272?hl=en&ref_topic=14088998&sjid=5129943941510317771-SA#zippy=%2Cgoogle-sites
 # and follow the instructions for Google Sites. You will need to create a Google Analytics property and copy the Google tag ID.
 google_analytics: G-FFX0E5Y6R5 # your Google Analytics measurement ID (format: G-XXXXXXXXXX)
@@ -119,16 +167,29 @@ cronitor_analytics: # cronitor RUM analytics site ID (format: XXXXXXXXX)
 # For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
 google_site_verification: # your google-site-verification ID (Google Search Console)
 bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
+=======
+google_analytics:
+cronitor_analytics:
+google_site_verification:
+bing_site_verification:
+>>>>>>> 23791b5a9145be7e558c167f46e609429a584f56
 
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
 
+<<<<<<< HEAD
 blog_name: boyer's blog # blog_name will be displayed in your blog page
 blog_description: all things asboyer
 permalink: /blog/:year/:title/
 
 # Pagination
+=======
+blog_name: Blogger's pen
+blog_description: Here we are!
+permalink: /blog/:year/:title/
+
+>>>>>>> 23791b5a9145be7e558c167f46e609429a584f56
 pagination:
   enabled: true
 
@@ -136,6 +197,7 @@ related_blog_posts:
   enabled: true
   max_related: 3
 
+<<<<<<< HEAD
 # Giscus comments (RECOMMENDED)
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
 giscus:
@@ -162,6 +224,19 @@ giscus:
 #   - name: medium.com
 #     rss_url: https://medium.com/@al-folio/feed
 
+=======
+giscus:
+  repo: asboyer/asboyer.github.io
+  category: Comments
+  mapping: title
+  strict: 1
+  reactions_enabled: 0
+  input_position: bottom
+  theme: preferred_color_scheme
+  emit_metadata: 0
+  lang: en
+
+>>>>>>> 23791b5a9145be7e558c167f46e609429a584f56
 # -----------------------------------------------------------------------------
 # Collections
 # -----------------------------------------------------------------------------
@@ -188,6 +263,7 @@ collections:
 
 announcements:
   enabled: true
+<<<<<<< HEAD
   scrollable: false # adds a vertical scroll bar if there are more than 3 news items
   limit: 3 # leave blank to include all the news in the `_news` folder
 
@@ -210,12 +286,39 @@ latest_favs:
   enabled: true
   scrollable: false # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
+=======
+  scrollable: false
+  limit: 3
+
+latest_posts:
+  enabled: true
+  scrollable: false
+  limit: 3
+
+key_projects:
+  enabled: true
+  scrollable: false
+  limit: 3
+
+latest_notes:
+  enabled: true
+  scrollable: false
+  limit: 8
+
+latest_favs:
+  enabled: true
+  scrollable: false
+  limit: 3
+>>>>>>> 23791b5a9145be7e558c167f46e609429a584f56
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
 # -----------------------------------------------------------------------------
 
+<<<<<<< HEAD
 # Markdown and syntax highlight
+=======
+>>>>>>> 23791b5a9145be7e558c167f46e609429a584f56
 markdown: kramdown
 highlighter: rouge
 kramdown:
@@ -228,7 +331,10 @@ kramdown:
       line_numbers: false
       start_line: 1
 
+<<<<<<< HEAD
 # Includes & excludes
+=======
+>>>>>>> 23791b5a9145be7e558c167f46e609429a584f56
 include: ["_pages"]
 exclude:
   - bin
@@ -240,7 +346,10 @@ keep_files:
   - .nojekyll
   - .git
 
+<<<<<<< HEAD
 # Plug-ins
+=======
+>>>>>>> 23791b5a9145be7e558c167f46e609429a584f56
 plugins:
   - jekyll-archives
   - jekyll-email-protect
@@ -251,13 +360,20 @@ plugins:
   - jekyll-link-attributes
   - jekyll-minifier
   - jekyll-paginate-v2
+<<<<<<< HEAD
   - jekyll/scholar
+=======
+  - jekyll-scholar
+>>>>>>> 23791b5a9145be7e558c167f46e609429a584f56
   - jekyll-sitemap
   - jekyll-toc
   - jekyll-twitter-plugin
   - jemoji
 
+<<<<<<< HEAD
 # Sitemap settings
+=======
+>>>>>>> 23791b5a9145be7e558c167f46e609429a584f56
 defaults:
   - scope:
       path: "assets"
@@ -267,21 +383,29 @@ defaults:
 sass:
   style: compressed
 
+<<<<<<< HEAD
 # -----------------------------------------------------------------------------
 # Jekyll Minifier
 # -----------------------------------------------------------------------------
 
+=======
+>>>>>>> 23791b5a9145be7e558c167f46e609429a584f56
 jekyll-minifier:
   exclude: ["robots.txt", "assets/js/search/*.js"]
   uglifier_args:
     harmony: true
 
+<<<<<<< HEAD
 # -----------------------------------------------------------------------------
 # Jekyll Archives
 # -----------------------------------------------------------------------------
 
 jekyll-archives:
   enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
+=======
+jekyll-archives:
+  enabled: [year, tags, categories]
+>>>>>>> 23791b5a9145be7e558c167f46e609429a584f56
   layouts:
     year: archive-year
     tag: archive-tag
@@ -291,6 +415,7 @@ jekyll-archives:
     tag: "/blog/tag/:name/"
     category: "/blog/category/:name/"
 
+<<<<<<< HEAD
 display_tags: ["code", "sierra-escape"] # these tags will be displayed on the front page of your blog
 display_categories: ["essays", "projects"] # these categories will be displayed on the front page of your blog
 display_authors: ["Andrew Boyer"]
@@ -321,10 +446,31 @@ scholar:
   details_dir: bibliography
   details_link: Details
 
+=======
+display_tags: ["code", "sierra-escape"]
+display_categories: ["essays", "projects"]
+display_authors: ["Andrew Boyer"]
+all_authors: ["andrew-boyer"]
+
+scholar:
+  last_name: [Einstein]
+  first_name: [Albert, A.]
+  style: apa
+  locale: en
+  source: /_bibliography/
+  bibliography: papers.bib
+  bibliography_template: bib
+  bibtex_filters: [latex, smallcaps, superscript]
+  replace_strings: true
+  join_strings: true
+  details_dir: bibliography
+  details_link: Details
+>>>>>>> 23791b5a9145be7e558c167f46e609429a584f56
   query: "@*"
   group_by: year
   group_order: descending
 
+<<<<<<< HEAD
 # Display different badges withs stats for your publications
 enable_publication_badges:
   altmetric: true # Altmetric badge (https://www.altmetric.com/products/altmetric-badges/)
@@ -346,12 +492,26 @@ enable_publication_thumbnails: true
 # -----------------------------------------------------------------------------
 
 # These are the defaults
+=======
+enable_publication_badges:
+  altmetric: true
+  dimensions: true
+
+filtered_bibtex_keywords:
+  [abbr, abstract, altmetric, arxiv, bibtex_show, blog, code, html, pdf, poster, preview, selected, slides, supp, video, website]
+
+max_author_limit: 3
+more_authors_animation_delay: 10
+enable_publication_thumbnails: true
+
+>>>>>>> 23791b5a9145be7e558c167f46e609429a584f56
 external_links:
   enabled: true
   rel: external nofollow noopener
   target: _blank
   exclude:
 
+<<<<<<< HEAD
 # -----------------------------------------------------------------------------
 # Responsive WebP Images
 # -----------------------------------------------------------------------------
@@ -360,6 +520,10 @@ external_links:
 #   convert -version
 imagemagick:
   enabled: true # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
+=======
+imagemagick:
+  enabled: true
+>>>>>>> 23791b5a9145be7e558c167f46e609429a584f56
   widths:
     - 480
     - 800
@@ -375,6 +539,7 @@ imagemagick:
   output_formats:
     webp: "-quality 85"
 
+<<<<<<< HEAD
 # -----------------------------------------------------------------------------
 # Optional Features
 # -----------------------------------------------------------------------------
@@ -395,6 +560,20 @@ enable_progressbar: true # enables a horizontal progress bar linked to the verti
 # -----------------------------------------------------------------------------
 # Library versions
 # -----------------------------------------------------------------------------
+=======
+enable_google_analytics: true
+enable_cronitor_analytics: false
+enable_google_verification: false
+enable_bing_verification: false
+enable_masonry: true
+enable_math: true
+enable_tooltips: true
+enable_darkmode: true
+enable_navbar_social: false
+enable_project_categories: true
+enable_medium_zoom: true
+enable_progressbar: true
+>>>>>>> 23791b5a9145be7e558c167f46e609429a584f56
 
 bootstrap-table:
   version: "1.22.1"
@@ -415,6 +594,7 @@ medium_zoom:
   version: "1.0.8"
   integrity: "sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8="
 
+<<<<<<< HEAD
 # -----------------------------------------------------------------------------
 # Get external JSON data
 # -----------------------------------------------------------------------------
@@ -422,6 +602,11 @@ medium_zoom:
 jekyll_get_json:
   - data: resume
     json: assets/json/resume.json # it can also be an url
+=======
+jekyll_get_json:
+  - data: resume
+    json: assets/json/resume.json
+>>>>>>> 23791b5a9145be7e558c167f46e609429a584f56
 jsonresume:
   - basics
   - work
