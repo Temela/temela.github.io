@@ -1,4 +1,4 @@
-name: Deploy GitHub Pages
+name: Deploy Jekyll to GitHub Pages
 
 on:
   push:
@@ -10,38 +10,39 @@ permissions:
   id-token: write
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: "3.1"
-
-      - name: Install dependencies
-        run: |
-          gem install bundler
-          bundle install
-
-      - name: Build the site
-        run: bundle exec jekyll build
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2 # <-- UPDATED from v1 to v2
-        with:
-          path: ./_site
-
   deploy:
-    needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
+    
     steps:
-      - name: Deploy to GitHub Pages
+      - uses: actions/checkout@v4
+
+      # Use DIRECT download links to avoid transitive dependencies
+      - name: Setup Ruby
+        uses: https://github.com/ruby/setup-ruby@v1.158.0 # Pinned SHA
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get install -y libxml2-dev libxslt1-dev
+          bundle config set --local path 'vendor/bundle'
+          bundle install
+
+      - name: Build with Jekyll
+        run: bundle exec jekyll build --trace
+        env:
+          JEKYLL_ENV: production
+
+      - name: Configure Pages
+        uses: https://github.com/actions/configure-pages@v4 # Pinned
+
+      - name: Upload artifact
+        uses: https://github.com/actions/upload-pages-artifact@v2.13.0 # Pinned
+
+      - name: Deploy
+        uses: https://github.com/actions/deploy-pages@v3.0.1 # Pinned
         id: deployment
-        uses: actions/deploy-pages@v2
