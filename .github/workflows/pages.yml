@@ -10,22 +10,38 @@ permissions:
   id-token: write
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle install
+
+      - name: Build the site
+        run: bundle exec jekyll build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./_site
+
   deploy:
+    needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4  # Updated from v3
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2  # Updated from v1
-        with:
-          path: './_site'
-
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v3  # Updated from v2
-        id: deployment  # Added for URL output
+        id: deployment
+        uses: actions/deploy-pages@v2
