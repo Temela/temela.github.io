@@ -20,7 +20,7 @@ gem "classifier-reborn"
 gem "unicode_utils"
 gem "feedjira"
 gem "httparty"
-gem "jekyll-scholar", git: "https://github.com/inukshuk/jekyll-scholar"
+# gem "jekyll-scholar", # git: "https://github.com/inukshuk/jekyll-scholar"
 gem "jekyll-jupyter-notebook", git: "https://github.com/nteract/jekyll-jupyter-notebook"
 
 group :jekyll_plugins do
