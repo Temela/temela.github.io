@@ -7,24 +7,44 @@ on:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        method: [ruby-native, docker]
+      fail-fast: false
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Ruby
+      - name: Setup Ruby (Native)
+        if: matrix.method == 'ruby-native'
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.2.4
           bundler-cache: true
 
-      - name: Install dependencies
+      - name: Install dependencies (Native)
+        if: matrix.method == 'ruby-native'
         run: |
           bundle config set --local path 'vendor/bundle'
           bundle install
 
-      - name: Build Jekyll site
+      - name: Build Jekyll site (Native)
+        if: matrix.method == 'ruby-native'
         run: bundle exec jekyll build
+
+      - name: Build Jekyll (Containerized)
+        if: matrix.method == 'docker'
+        uses: docker://jekyll/jekyll:4.3.3
+        with:
+          args: jekyll build --destination /github/workspace/_site
+        env:
+          JEKYLL_ENV: production
+
+      - name: Verify build output
+        run: |
+          ls -la _site
+          [ -f _site/index.html ] || exit 1
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
