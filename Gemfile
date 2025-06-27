@@ -30,5 +30,5 @@ end
 group :jekyll_plugins_local do
   gem "jekyll-imagemagick"
   # gem "jekyll-scholar"   <-- ❌ REMOVE or COMMENT this line
-  gem "mini_racer", platforms: [:mri, :x64_mingw, :x86_64_linux]
+  gem "mini_racer", platforms: [:mri, :x64_mingw]
 end

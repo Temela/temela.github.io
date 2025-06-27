@@ -15,15 +15,14 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    
+
     steps:
       - uses: actions/checkout@v4
 
-      # Use DIRECT download links to avoid transitive dependencies
       - name: Setup Ruby
-        uses: https://github.com/ruby/setup-ruby@v1.158.0 # Pinned SHA
+        uses: ruby/setup-ruby@v1.158.0
         with:
-          ruby-version: '3.2'
+          ruby-version: "3.2"
           bundler-cache: true
 
       - name: Install dependencies
@@ -38,11 +37,11 @@ jobs:
           JEKYLL_ENV: production
 
       - name: Configure Pages
-        uses: https://github.com/actions/configure-pages@v4 # Pinned
+        uses: actions/configure-pages@v4
 
       - name: Upload artifact
-        uses: https://github.com/actions/upload-pages-artifact@v2.13.0 # Pinned
+        uses: actions/upload-pages-artifact@v2.13.0
 
       - name: Deploy
-        uses: https://github.com/actions/deploy-pages@v3.0.1 # Pinned
+        uses: actions/deploy-pages@v3.0.1
         id: deployment
