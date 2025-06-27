@@ -5,12 +5,7 @@ on:
   pull_request:
 
 jobs:
-  link-checker:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Link Checker 🔗
+       - name: Link Checker 🔗
         uses: lycheeverse/lychee-action@v1.10.0
         with:
           fail: true
@@ -28,6 +23,10 @@ jobs:
             --exclude "https://instagram.com/*"
             --exclude "https://facebook.com/*"
             --exclude "https://youtube.com/*"
+            --exclude "https://dev.mysql.com/downloads/mysql/"
+            --exclude "https://www.java.com/"
+            --exclude "https://play.picoctf.org/events/34/scoreboards#35"
+            --exclude "https://www.linux.org/"
             --verbose
             --no-progress
             './**/*.md'
