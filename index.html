@@ -1,184 +1,178 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <title>Rev. Fr. Nduka Anthony, C.S.Sp.</title>
+    <title>Rev. Fr. Nduka Anthony, C.S.Sp. | Catholic Priest | Data Scientist | Researcher</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="title" content="Rev. Fr. Nduka Anthony, C.S.Sp.">
-    <meta property="og:title" content="Rev. Fr. Nduka Anthony, C.S.Sp.">
-    <meta property="og:site_name" content="Rev. Fr. Nduka Anthony">
-    <meta property="og:description" content="Catholic Priest | Data Scientist | Researcher">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:url" content="https://temela.github.io">
-    <meta property="og:type" content="website">
-    <meta property="twitter:title" content="Rev. Fr. Nduka Anthony, C.S.Sp.">
-    <meta name="description" content="Catholic Priest | Data Scientist | Researcher">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Catholic Priest | Data Scientist | Researcher focusing on responsible AI, data ethics, and human-centered computing">
     <meta name="keywords" content="Nduka Anthony, Data Science, Catholic Priest, Human-Centered Computing, AI Ethics">
-    <meta name="robots" content="index, follow">
-    <meta name="language" content="EN">
-    <meta name="revisit-after" content="30 days">
     <meta name="author" content="Rev. Fr. Nduka Anthony, C.S.Sp.">
-    <link rel="canonical" href="https://temela.github.io">
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:wght@400;700&display=swap" as="style">
-    <link rel="preload" href="assets/vendor/bootstrap/css/bootstrap.min.css" as="style">
-    <link rel="preload" href="assets/css/fontawesome6.all.min.css" as="style">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome6.all.min.css">
-    <link href="assets/css/main.css" rel="stylesheet">
-    <link href="assets/css/home.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    
     <style>
         :root {
+            --blue-medium: rgba(0, 119, 182, 0.8);
             --text-primary: #2a2a2a;
-            --link-color: #0077b5;
             --bg-light: #f5f5f5;
-            --border-color: #d4d4d4;
             --bg-dark: #1e1e1e;
             --text-light: #f5f5f5;
         }
         body {
+            font-family: 'Ubuntu Sans', sans-serif;
             background-color: var(--bg-light);
             color: var(--text-primary);
-            font-family: 'Ubuntu Sans', sans-serif;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        a {
-            color: var(--link-color);
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+            transition: all 0.3s ease;
         }
         body.dark-mode {
             background-color: var(--bg-dark);
             color: var(--text-light);
         }
-        body.dark-mode a {
-            color: #66b2ff;
+        .btn-outline-blue {
+            border-color: var(--blue-medium);
+            color: var(--blue-medium);
         }
-        .theme-icon {
-            font-size: 1rem;
+        .btn-outline-blue:hover {
+            background-color: var(--blue-medium);
+            color: white;
         }
-        .social-icons span {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin-bottom: 6px;
+        .social-icons li {
+            margin-bottom: 0.5rem;
+        }
+        .ref-journal {
+            font-weight: bold;
+            color: var(--blue-medium);
+        }
+        .profile-img {
+            border: solid var(--blue-medium) 2px;
+            width: 60%;
+            max-width: 250px;
         }
     </style>
 </head>
+
 <body>
+    <!-- Dark Mode Toggle -->
     <div class="container text-right mt-2">
-        <button id="toggle-dark" class="btn btn-sm btn-outline-primary" aria-label="Toggle dark mode">
-            <i id="theme-icon" class="fas fa-moon theme-icon"></i>
+        <button id="toggle-dark" class="btn btn-sm btn-outline-blue">
+            <i id="theme-icon" class="fas fa-moon"></i>
         </button>
     </div>
+
     <div id="page-container">
-        <header>
-            <!-- Header content will be injected by header.js -->
-        </header>
-        <main class="container mt-4">
+        <div class="container mt-4">
             <div class="row">
                 <div class="col-sm-4">
-                    <div class="card">
-                        <img class="rounded-circle mx-auto d-block mb-3" 
-                             style="border:solid var(--link-color) 2px; width:60%; max-width: 250px;" 
+                    <div class="text-center">
+                        <img class="rounded-circle mx-auto d-block mb-3 profile-img"
                              src="assets/img/nduka_anthony.jpg" 
                              alt="Rev. Fr. Nduka Anthony">
-                        <div class="card-body">
-                            <h4 class="text-center mb-1" style="color: var(--link-color); font-size: 1.6rem;">
-                                Rev. Fr. Nduka Anthony, C.S.Sp.
-                            </h4>
-                            <p class="text-center mb-3">Catholic Priest | Data Scientist | Researcher</p>
-                            <ul class="list-unstyled pl-3">
-                                <li><span><i class="fas fa-location-dot"></i> Nigeria</span></li>
-                                <li><span><i class="fas fa-school"></i> Spiritan Province Nigeria SE</span></li>
-                                <li><a href="mailto:tchiemela@gmail.com"><i class="far fa-envelope"></i> tchiemela@gmail.com</a></li>
-                                <li><a href="https://linkedin.com/in/tchiemela" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-                                <li><a href="https://github.com/temela" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></li>
-                                <li><a href="https://x.com/_tchiemela" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i> Twitter</a></li>
-                            </ul>
-                        </div>
+                        
+                        <h4 style="color: var(--blue-medium); font-size: 1.6rem;">
+                            Rev. Fr. Nduka Anthony, C.S.Sp.
+                        </h4>
+                        <p class="mb-4">Catholic Priest | Data Scientist | Researcher</p>
+                        
+                        <!-- Contact Information Section -->
+                        <ul class="social-icons list-unstyled pl-0 text-left">
+                            <li><span><i class="fas fa-map-marker-alt mr-2"></i>Spiritan Provincialate, Onitsha, NG</span></li>
+                            <li><span><i class="fas fa-university mr-2"></i>Spiritan University Nneochi</span></li>
+                            <li><a href="mailto:tchiemela@gmail.com"><i class="far fa-envelope mr-2"></i>tchiemela@gmail.com</a></li>
+                            <li><a href="https://orcid.org/0009-0000-1628-0658" target="_blank" rel="noopener noreferrer"><i class="fab fa-orcid mr-2"></i>ORCID Profile</a></li>
+                            <li><a href="https://linkedin.com/in/tchiemela" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin mr-2"></i>LinkedIn</a></li>
+                            <li><a href="https://github.com/temela" target="_blank" rel="noopener noreferrer"><i class="fab fa-github mr-2"></i>GitHub</a></li>
+                            <li><a href="https://x.com/_tchiemela" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter mr-2"></i>Twitter</a></li>
+                        </ul>
                     </div>
                 </div>
+                
                 <div class="col-sm-8">
-                    <section>
-                        <h2>About Me</h2>
+                    <!-- About Section -->
+                    <section class="mb-4">
+                        <h4 class="font-weight-bold">About Me</h4>
                         <p>I am a Catholic priest and data scientist with deep roots in theology and information technology. I focus on responsible AI, data ethics, and human-centered computing—especially within underserved and aging populations.</p>
                     </section>
-                    <section class="mt-4">
-                        <h2>Research</h2>
+                    
+                    <!-- Research Section -->
+                    <section class="mb-4">
+                        <h4 class="font-weight-bold">Research</h4>
                         <p>My work explores AI fairness, predictive health models, digital communication systems for the Church, and inclusive technologies. I've contributed to projects on biometric-integrated voting, cardiovascular disease prediction, and real-time edge analytics for IoT.</p>
-                        <p><strong>Research Interests:</strong> Healthcare Analytics, Human-Centered Computing, Data Ethics, Machine Learning, AI Fairness, Distributed Systems</p>
+                        <p class="mt-3"><strong>Research Interests:</strong> Healthcare Analytics, Human-Centered Computing, Data Ethics, Machine Learning, AI Fairness, Distributed Systems</p>
                     </section>
-                    <section class="mt-4">
-                        <h2>News</h2>
-                        <div class="accordion" id="newsAccordion">
-                            <div class="card">
-                                <div class="card-header" id="headingOne">
-                                    <h3 class="mb-0">
-                                        <button class="btn btn-link" type="button" data-toggle="collapse" 
-                                                data-target="#collapseOne" aria-expanded="false" 
-                                                aria-controls="collapseOne">
-                                            View Updates
-                                        </button>
-                                    </h3>
-                                </div>
-                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#newsAccordion">
-                                    <div class="card-body">
-                                        <ul>
-                                            <li>2024 – Presented on Big Data and IoT in Media Industry</li>
-                                            <li>2023 – IBM Data Science Certificate completed</li>
-                                            <li>2022 – Awarded Best Data Management Secretary, Rome</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="mt-4">
-                        <h2>Publications</h2>
-                        <ul>
-                            <li><em>Leveraging Big Data and IoT in Media Industry</em> – 2024</li>
-                            <li><em>Real-Time Edge Analytics for IoT Networks</em> – 2024</li>
-                            <li><em>Quantum Computing for Fraud Detection in Financial Networks</em> – 2024</li>
+                    
+                    <!-- News Section -->
+                    <section class="mb-4">
+                        <h4 class="font-weight-bold">News</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><span class="ref-journal">2024:</span> Presented on Big Data and IoT in Media Industry</li>
+                            <li class="mb-2"><span class="ref-journal">2023:</span> IBM Data Science Certificate completed</li>
+                            <li class="mb-2"><span class="ref-journal">2022:</span> Awarded Best Data Management Secretary, Rome</li>
                         </ul>
                     </section>
-                    <section class="mt-4">
-                        <h2>Bio</h2>
-                        <p>Born and raised in Nigeria, I was formed intellectually and spiritually through my studies in philosophy, theology, and technology. As a Spiritan priest, I serve both in the pastoral and digital mission fields, driven by the vision of a just and compassionate society empowered through data-driven insights. I direct the Spiritan Healthcare Apostolate, where I work to improve the lives of aging clergy and vulnerable individuals through predictive analytics and tech-supported care systems. My research has earned recognition for its practical impact and ethical depth, including an award from the Spiritan Generalate in Rome. I continue to bridge the worlds of code, conscience, and communion.</p>
+                    
+                    <!-- Publications Section -->
+                    <section class="mb-4">
+                        <h4 class="font-weight-bold">Publications</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><em>Leveraging Big Data and IoT in Media Industry</em> – 2024</li>
+                            <li class="mb-2"><em>Real-Time Edge Analytics for IoT Networks</em> – 2024</li>
+                            <li class="mb-2"><em>Quantum Computing for Fraud Detection in Financial Networks</em> – 2024</li>
+                        </ul>
                     </section>
-                    <section class="mt-4 mb-5">
-                        <h2>CV & Resume</h2>
-                        <a class="btn btn-primary btn-sm" href="assets/pdf/nduka_resume.pdf" target="_blank" rel="noopener noreferrer">
-                            Resume <i class="fas fa-circle-info ml-1"></i>
+                    
+                    <!-- Bio Section -->
+                    <section class="mb-4">
+                        <h4 class="font-weight-bold">Bio</h4>
+                        <p>Born and raised in Nigeria, I was formed intellectually and spiritually through my studies in philosophy, theology, and technology. As a Spiritan priest, I serve both in the pastoral and digital mission fields, driven by the vision of a just and compassionate society empowered through data-driven insights.</p>
+                    </section>
+                    
+                    <!-- CV Section -->
+                    <section class="mb-5">
+                        <h4 class="font-weight-bold">CV & Resume</h4>
+                        <a href="assets/pdf/nduka_resume.pdf" class="btn btn-outline-blue btn-sm" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-circle-info mr-1"></i> Resume
                         </a>
-                        <a class="btn btn-primary btn-sm ml-2" href="assets/pdf/nduka_cv.pdf" target="_blank" rel="noopener noreferrer">
-                            Curriculum Vitae <i class="far fa-file ml-1"></i>
+                        <a href="assets/pdf/nduka_cv.pdf" class="btn btn-outline-blue btn-sm ml-2" target="_blank" rel="noopener noreferrer">
+                            <i class="far fa-file mr-1"></i> Curriculum Vitae
                         </a>
                     </section>
                 </div>
             </div>
-        </main>
-        <footer class="mt-5 py-3 text-center">
-            <p>&copy; 2024 Rev. Fr. Nduka Anthony, C.S.Sp. All rights reserved.</p>
+        </div>
+        
+        <footer class="text-center py-3">
+            <p>&copy; 2024 Rev. Fr. Nduka Anthony, C.S.Sp.</p>
         </footer>
     </div>
+
+    <!-- JavaScript -->
     <script src="assets/vendor/jquery/jquery.slim.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/popper.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/main.js" defer></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/fontawesome6.all.min.js"></script>
+    
     <script>
+        // Dark Mode Toggle
         document.addEventListener('DOMContentLoaded', function() {
             const toggleBtn = document.getElementById('toggle-dark');
             const icon = document.getElementById('theme-icon');
+            
+            // Load saved preference
             if (localStorage.getItem('darkMode') === 'enabled') {
                 document.body.classList.add('dark-mode');
                 icon.classList.replace('fa-moon', 'fa-sun');
             }
+            
+            // Toggle handler
             toggleBtn.addEventListener('click', function() {
                 document.body.classList.toggle('dark-mode');
+                
                 if (document.body.classList.contains('dark-mode')) {
                     icon.classList.replace('fa-moon', 'fa-sun');
                     localStorage.setItem('darkMode', 'enabled');
