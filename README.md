@@ -1,67 +1,66 @@
-# academic-portfolio-template-lemos
-This repository contains an elegant and responsive academic portfolio template built using HTML, CSS, JavaScript, and Bootstrap. Designed for students, researchers, and academics, this template allows you to showcase your educational background, research projects, publications, and professional accomplishments in a clean and modern layout.
+
+# academic-portfolio
+
+This repository contains a personalized and responsive academic portfolio built with HTML, CSS, JavaScript, and Bootstrap. Designed for researchers, scholars, and students, this site showcases my academic background, research projects, publications, teaching experience, and professional skills in a clean and human-centered layout.
 
 ## Features
 
-- **Responsive Design**: Ensures optimal viewing experience across various devices including desktops, tablets, and smartphones.
-- **Bootstrap Framework**: Utilizes Bootstrap 4 for a robust, mobile-first layout and easy customization.
-- **Modern Aesthetic**: Clean and professional design to highlight your academic achievements.
-- **Interactive Elements**: JavaScript-powered features for enhanced user interaction.
-- **Ease of Customization**: Simple HTML and CSS structure for straightforward customization to fit your personal style and needs.
+- **Mobile-Friendly Layout**: Designed to adapt across devices—desktop, tablet, and phone.
+- **Built on Bootstrap 4**: Structured with familiar grid systems and UI components for ease of editing.
+- **Clean Design**: Emphasis on readability and structure for academic visibility.
+- **Modular Pages**: Easily add or remove sections (e.g., Projects, Teaching, Publications).
+- **Straightforward Customization**: Basic HTML/CSS knowledge is enough to modify and expand.
 
-## Sections Included
+## Sections
 
-- **Home**: A welcoming introduction with a brief overview and personal photo.
-- **Education**: A comprehensive list of your educational qualifications.
-- **Experience**: Detail your professional experience including jobs, internships, and volunteer work.
-- **Skills**: Showcase your technical and soft skills.
-- **Teaching**: Highlight your teaching experience and related activities.
-- **Projects**: Showcase your academic and personal projects.
-- **Publications**: Showcase your published papers, articles, and other scholarly work.
-- **Blogs**: Display your blog posts and articles.
+- **Home**: Welcome text and personal intro.
+- **Education**: Degrees and core areas of academic formation.
+- **Certifications**: Additional training, technical certificates, and online specializations.
+- **Teaching**: Formal and informal teaching experiences across levels.
+- **Projects**: Hands-on data science, system design, and AI projects.
+- **Publications**: Peer-reviewed articles, conference papers, and working drafts.
+- **Blog**: Personal reflections and insights on technology, theology, and ethics.
+- **Contact**: Email and social media links.
 
 ## Screenshots
-> ### Homepage
-> <img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/Homepage.PNG" width="1000"> 
+> ### Homepage  
+> ![Homepage](assets/img/screenshots/Homepage.PNG)
 
-> ### Projects
-> <img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/projects.PNG" width="1000"> 
+> ### Projects  
+> ![Projects](assets/img/screenshots/projects.PNG)
 
-> ### Teaching Experience
-> <img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/Teaching.PNG" width="1000"> 
+> ### Teaching  
+> ![Teaching](assets/img/screenshots/Teaching.PNG)
 
-> ### Skills, Education
-> <img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/Skills.PNG" width="380"><span style="margin-left:15px"><img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/Education.PNG" width="380"> 
+> ### Skills & Education  
+> ![Skills](assets/img/screenshots/Skills.PNG) ![Education](assets/img/screenshots/Education.PNG)
 
-> ### Blogposts, Publications
-> <img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/Blogs.PNG" width="380"><span style="margin-left:15px"><img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/Publications.PNG" width="380"> 
+> ### Blog & Publications  
+> ![Blog](assets/img/screenshots/Blogs.PNG) ![Publications](assets/img/screenshots/Publications.PNG)
 
+## How to View
 
-## Getting Started
-
-1. **Clone the Repository**
+1. **Clone this repository**
    ```bash
-   git clone https://github.com/rochanaro/academic-portfolio-template-lemos.git
+   git clone https://github.com/Temela/academic-portfolio.git
    ```
 
-1. **Navigate to the Project Directory**
+2. **Navigate into the project directory**
    ```bash
-   cd academic-portfolio-template-lemos
+   cd academic-portfolio
    ```
 
-2. **Open `index.html` in Your Browser**
-   - Simply open the `index.html` file in your preferred web browser to see the template in action.
-
+3. **Launch the site**
+   Open `index.html` in any browser. No server needed.
 
 ## Customization
-To customize the template, edit the HTML (located in `pages`) and CSS (located in `assets`) files in the project directory. You can modify the structure, style, color theme, and content to fit your personal needs. The template is built with Bootstrap 4, so you can utilize Bootstrap's extensive class library for additional customization.
 
+- All HTML files are in the `/pages` directory.
+- Stylesheets and images are inside `/assets`.
+- Edit header and footer components in `/components/` for site-wide changes.
+- All sections are self-contained, making it easy to remove or extend features.
 
-### Read More...
-[Blog Post](https://ws-dl.blogspot.com/2024/06/2024-06-04-revamp-your-academic.html)
-<br>
-<br>
 ---
 
-<b>Rochana R. Obadage</b> <br>
-<i>19th July 2024</i>
+This portfolio is maintained by **Fr. Anthony Nduka, C.S.Sp.**  
+_Last updated: July 2025_
